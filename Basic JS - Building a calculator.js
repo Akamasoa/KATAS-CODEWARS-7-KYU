@@ -22,3 +22,6 @@ const Calculator = {
   multiply: (x, y) => x * y,
   divide: (x, y) => (y === 0 ? false : x / y),
 }
+
+// Function Export
+module.exports = Calculator
