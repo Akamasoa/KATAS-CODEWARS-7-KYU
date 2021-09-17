@@ -25,3 +25,7 @@ const Calculator = {
 
 // Function Export
 module.exports = Calculator
+
+const Calculator = require('.')
+
+//Test:
