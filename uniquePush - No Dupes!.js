@@ -13,6 +13,6 @@ If the person doesn't have a phoneNumber, don't add them to the array and return
 
 function uniquePush(arr, obj) {
   if (obj.phoneNumber && !arr.some(function (entry) { 
-     return entry.phoneNumber == obj.phoneNumber })) 
+     return entry.phoneNumber == obj.phoneNumber }));
         return arr.push(obj);
 }
