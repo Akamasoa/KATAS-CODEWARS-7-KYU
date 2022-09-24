@@ -19,3 +19,6 @@ var jordan = new NBAplaer("Jordan", "bulls", 20.2);
 sumPPG(iverson, jordan); // => 31.4
 */
 
+function sumPPG(playerOne, playerTwo){
+  return playerOne.ppg + playerTwo.ppg;
+}
