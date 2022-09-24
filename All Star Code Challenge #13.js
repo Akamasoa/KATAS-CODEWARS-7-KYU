@@ -18,3 +18,10 @@ Note:
 If the string input is less than 2 letters, the input should be returned as is
 */
 
+let translate = function(word) {
+  if (word.length==1) return word;
+    if (word.length >= 2){
+      if (/[aeiou]/.test(word.slice(0,1))) return word + 'ay';
+      return word.slice(1) + word.slice(0,1) + 'ay'};
+    return '';
+}
