@@ -13,3 +13,6 @@ noRepeat("testing") // => "e"
 Note: ONLY letters from the english alphabet will be used as input There will ALWAYS be at least one non-repeating letter in the input string
 */
 
+function noRepeat(str) {  
+  for(let i of str) if(str.split(i).length == 2) return i;
+}
