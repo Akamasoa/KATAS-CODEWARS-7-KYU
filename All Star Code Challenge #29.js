@@ -12,4 +12,6 @@ Note:
 A "word" should be considered a string split by a space character, " " Letter capitalization should be maintained.
 */
 
-
+function reverseSentence(str){
+  return str.split` `.map(v => v.split``.reverse().join``).join` `;
+}
