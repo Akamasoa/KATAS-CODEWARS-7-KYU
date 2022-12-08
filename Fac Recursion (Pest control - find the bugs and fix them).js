@@ -7,3 +7,9 @@ In case of 0! the result is 1 and in case of a negative factorial the result sho
 The goal is to find the bugs in the sourcecode and fix them (play a little pest control).
 */
 
+
+function facRecursion(value) {
+  if (value < 0) return 0;
+  if (value <= 1) return 1;
+  return value * facRecursion(value - 1);
+}
