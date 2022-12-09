@@ -13,3 +13,6 @@ And your solution should be able to calculate n! / d!.
 * Please, don't worry about the parameters. You will only receive positive integers, and the first one will be greater than the second one
 */
 
+function factorialDivision(n, d) {
+  return n == d ? 1 : n * factorialDivision(n - 1, d);
+}
