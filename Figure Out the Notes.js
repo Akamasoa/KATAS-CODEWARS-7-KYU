@@ -9,3 +9,8 @@ Moving up one fret goes one note up on the fretboard moves one note up the scale
 We're not concerned with octaves, so just return the note as a capital letter (C#, B, D, etc.)
 */
 
+const whatNote = (string, fret) => {
+  let notes = "A, A#, B, C, C#, D, D#, E, F, F#, G, G#".split(", "),
+    len = notes.length;
+  return notes[(notes.indexOf(string.toUpperCase()) + fret) % len];
+};
