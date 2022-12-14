@@ -9,3 +9,8 @@ Examples
 [0, 1, 2, 3, 4, 5]                ==>  []
 */
 
+function duplicates(arr) {
+  return [
+    ...new Set(arr.filter((v, i, arr) => arr.indexOf(v) !== arr.lastIndexOf(v)))
+  ];
+}
