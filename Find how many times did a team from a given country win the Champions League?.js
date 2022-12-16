@@ -10,9 +10,11 @@ You function should then return the number which represents the number of times 
 
 For example if the input array is as follows:
 
-
 countWins(winnerList1, 'Spain') => should return 2
 countWins(winnerList1, 'Portugal') => should return 1
 countWins(winnerList1, 'Sportland') => should return 0
 */
 
+function countWins(winnerList, country) {
+  return winnerList.filter(v => v.country == country).length;
+}
