@@ -15,3 +15,6 @@ array = [[5, 9, 1, 0],
 diagonal sum: 5 + 7 + 1 + 2 = 15
 */
 
+function diagonalSum(matrix) {
+  return matrix.reduce((accum, current, index) => accum + current[index], 0);
+}
