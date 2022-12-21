@@ -18,3 +18,17 @@ gimme([5, 10, 14]) => 1
 let gimme = function(inputArray) {
   return [...inputArray].indexOf(inputArray.sort((a, b) => a - b)[1]);
 };
+
+/*
+var gimme = function (inputArray) {
+  let index = 0;
+  let max = Math.max(...inputArray);
+  let min = Math.min(...inputArray);
+  for(let i = 0; i < inputArray.length; i++){
+    if(inputArray[i] !== max && inputArray[i] !== min){        
+      index = i;
+    }
+  }
+  return index;
+};
+*/
