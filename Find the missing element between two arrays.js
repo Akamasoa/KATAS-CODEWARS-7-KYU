@@ -17,3 +17,21 @@ function findMissing(arr1, arr2) {
       return arr1[i];
     }
 }
+
+/*
+Without sort:
+
+function findMissing(arr1, arr2) {
+  let count1 = 0;
+  for(var i = 0; i < arr1.length; i++){
+    count1 += arr1[i];
+    }
+  let count2 = 0;
+  for(var i = 0; i < arr2.length; i++){
+    count2 += arr2[i];
+  }
+  let x = count1 - count2;
+  
+	return x;
+}
+*/
