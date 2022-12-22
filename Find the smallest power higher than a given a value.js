@@ -18,3 +18,6 @@ The power, pow_, always higher than 1.
 Happy coding!!
 */
 
+function findNextPower(val, pow) {
+  return Math.ceil(val ** (1 / pow)) ** pow;
+}
