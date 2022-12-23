@@ -11,3 +11,8 @@ Examples
 [17, 17, 3, 17, 17, 17, 17] ==> 3
 */
 
+function stray(numbers) {
+ return numbers.find(
+    number => numbers.indexOf(number) === numbers.lastIndexOf(number)
+  );
+}
