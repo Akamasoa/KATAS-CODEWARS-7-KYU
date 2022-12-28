@@ -15,3 +15,10 @@ Please, keep in mind, that JavaScript is by default sorting objects alphabetical
 http://stackoverflow.com/questions/6093874/why-doesnt-the-sort-function-of-javascript-work-well
 */
 
+"use strict";
+
+function flattenAndSort(array) {
+  // Good luck, brave code warrior!
+    return [].concat(...array).sort((a, b) => a - b);
+}
+
