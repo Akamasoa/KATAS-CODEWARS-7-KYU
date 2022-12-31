@@ -13,3 +13,15 @@ numbers(1, "a", 3); // false
 numbers(1, 3, NaN); // true
 */
 
+const numbers = (...args) => args.every(arg => typeof arg === "number");
+
+/*
+function numbers() {
+  for (let i=0; i<arguments.length; i++) {
+    if (arguments[i] == null || typeof arguments[i] === 'string') {
+      return false;
+    }
+  }
+  return true;
+}
+*/
