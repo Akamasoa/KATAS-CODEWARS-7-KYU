@@ -7,3 +7,8 @@ freq_seq("19999999", ":"); // => "1:7:7:7:7:7:7:7"
 freq_seq("^^^**$", "x"); // => "3x3x3x2x2x1"
 */
 
+function freqSeq(str, sep) {
+ let obj={};
+ str.split('').map(v=>obj[v]=obj[v]?obj[v]+1:1);
+ return str.split('').map(v=>obj[v]).join(sep);
+}
