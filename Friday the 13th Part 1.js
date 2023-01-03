@@ -23,3 +23,8 @@ alt text
 Happy Friday the 13th!
 */
 
+function killcount(counselors, jason){
+  const arr = [];
+  counselors.map(v => v[1] < jason ? arr.push(v[0]) : v);
+  return arr;
+}
