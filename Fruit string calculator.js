@@ -27,3 +27,9 @@ function calculate(string) {
   }
   return arr[0] * 1 + arr[1] * 1;
 }
+
+/*
+function calculate(string) {
+  return eval(string.replace('loses','-').replace('gains','+').replace(/[a-zA-Z]/g,''));
+}
+*/
