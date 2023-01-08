@@ -16,3 +16,7 @@ function add(n) {
     return n + m;
   }
 }
+
+/*
+var add = a => n => n + a;
+*/
