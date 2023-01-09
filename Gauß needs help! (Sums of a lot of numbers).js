@@ -15,3 +15,6 @@ Advanced - experienced users should try to solve it in one line, without loops, 
 Credits: this kata was inspired by the farzher's kata 'Sum of large ints' . In fact, it can be seen as a sort of prep kata for that one.
 */
 
+function f(n){
+  return parseInt(n) === n && n > 0 ? (n * (n + 1)) / 2 : false;
+};
