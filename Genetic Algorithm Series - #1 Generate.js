@@ -20,3 +20,10 @@ Genetic Algorithm Series - #5 Roulette wheel selection
 This kata is a piece of Binary Genetic Algorithm
 */
 
+const generate = length => {
+  let bits = "";
+  for (let i = 0; i < length; i++) {
+    bits += Math.round(Math.random());
+  }
+  return bits;
+};
