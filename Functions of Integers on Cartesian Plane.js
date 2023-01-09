@@ -42,3 +42,6 @@ sumax(5000) --> 83345832500
 sumsum(5000) --> 125025000000
 */
 
+const sumin = n => (n * (n + 1) * (2 * n + 1)) / 6;
+const sumax = n => (n * (n + 1) * (4 * n - 1)) / 6;
+const sumsum = n => n * n * (n + 1);
