@@ -20,3 +20,8 @@ Genetic Algorithm Series - #5 Roulette wheel selection
 This kata is a piece of Binary Genetic Algorithm
 */
 
+const mapPopulationFit = (population, fitness) => {
+  return population.map(v => {
+    return { chromosome: v, fitness: fitness(v) };
+  });
+};
