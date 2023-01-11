@@ -19,3 +19,9 @@ Genetic Algorithm Series - #4 Get population and fitnesses
 Genetic Algorithm Series - #5 Roulette wheel selection
 */
 
+const crossover = (chromosome1, chromosome2, index) => {
+  return [
+    chromosome1.slice(0, index) + chromosome2.slice(index),
+    chromosome2.slice(0, index) + chromosome1.slice(index)
+  ];
+};
