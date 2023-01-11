@@ -18,3 +18,13 @@ Genetic Algorithm Series - #4 Get population and fitnesses
 Genetic Algorithm Series - #5 Roulette wheel selection
 */
 
+const mutate = (chromosome, p) => {
+  return chromosome.replace(/([0-9])/g, $1 => {
+    if ($1 === "0") {
+      return Math.random() < p ? 1 : 0;
+    }
+    if ($1 === "1") {
+      return Math.random() < p ? 0 : 1;
+    }
+  });
+};
