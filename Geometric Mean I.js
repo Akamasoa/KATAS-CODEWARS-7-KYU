@@ -20,3 +20,8 @@ You do not have to round the results.
 (When you finish this kata, Geometric Mean II will be waiting you. http://www.codewars.com/kata/56ec6016a9dfe3346e001242)
 */
 
+function geometricMeanI(arr) {
+  var gm = arr.filter(a => typeof a === "number" && a >= 0);
+  if (arr.length - gm.length > 1) return 0;
+  return Math.pow(gm.reduce((a, b) => a * b), 1 / gm.length);
+}
