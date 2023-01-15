@@ -15,3 +15,10 @@ For example, the following statement should return function foo() {} instead of 
 _originalToString(foo); // function foo() {}
 */
 
+var _originalToString = function(func) {
+  return Function.toString.apply(func);
+};
+
+/*
+const _originalToString = func => Function.prototype.toString.call(func);
+*/
