@@ -21,3 +21,9 @@ function ghostBusters(str) {
   if (str.match(/ /)) return str.replace(/ /g, "");
   return "You just wanted my autograph didn't you?";
 }
+
+/*
+function ghostBusters(building) {
+  return /\s/.test(building) ? building.replace(/\s+/g, '') : "You just wanted my autograph didn't you?";
+}
+*/
