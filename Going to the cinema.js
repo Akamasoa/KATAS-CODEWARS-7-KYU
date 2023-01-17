@@ -22,3 +22,12 @@ movie(100, 10, 0.95) should return 24
     (with card the total price is 235, with tickets 240)
 */
 
+function movie(card, ticket, perc) {
+  let costA = (n = 0),
+    costB = card;
+  while (Math.ceil(costB) >= costA) {
+    costA += ticket;
+    costB += ticket * Math.pow(perc, ++n);
+  }
+  return n;
+}
