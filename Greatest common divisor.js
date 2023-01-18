@@ -9,3 +9,12 @@ function mygcd(x, y) {
   return y == 0 ? x : mygcd(y, x % y);
 }
 
+/*
+function mygcd(x, y){
+  for ( let j = Math.max(x, y); j > 0; j-- ){
+    if ( x % j === 0 && y % j === 0){
+      return j
+    }
+  }
+}
+*/
