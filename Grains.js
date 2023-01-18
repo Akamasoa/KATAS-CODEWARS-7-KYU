@@ -10,3 +10,18 @@ There are 64 squares on a chessboard.
 Write a program that shows how many grains were on each square.
 */
 
+function square(number) {
+  return Math.pow(2, number - 1);
+}
+
+/*
+function square(number) {
+  let counts = 1;
+  for (let i = 1; i <= number; i++) {
+    if (i > 1) {
+      counts += counts;
+    }
+  }
+  return counts;
+}
+*/
