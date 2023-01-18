@@ -18,3 +18,6 @@ Example
   add(1,4,-5,5); //=> 14
 */
 
+function add(...arg) {
+  return arg.map((v, i) => v * (i + 1)).reduce((a, b) => a + b, 0);
+}
