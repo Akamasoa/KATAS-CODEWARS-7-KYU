@@ -28,3 +28,8 @@ function stepThroughWith(s) {
   return false;
 }
 
+/*
+function stepThroughWith(s) {
+  return (/(.)\1/).test(s);
+}
+*/
