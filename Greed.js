@@ -9,3 +9,8 @@ getQuotes('"example quote #1" some text "example quote #2"');
 However, my test results are not as expected. can you find out what I did wrong?
 */
 
+var reg = /".+?"/g;
+function getQuotes(string) {
+  return string.match(reg);
+}
+
