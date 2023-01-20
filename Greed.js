@@ -14,3 +14,6 @@ function getQuotes(string) {
   return string.match(reg);
 }
 
+/*
+const getQuotes = str => str.match(/"([^"]+)"/g);
+*/
