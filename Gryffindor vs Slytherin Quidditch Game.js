@@ -15,3 +15,16 @@ If the score is a tie return "It's a draw!""
 ** The game only ends when someone catches the golden snitch, so one array will always include 'yes' or 'no.' Points scored by Chasers can be any positive integer.
 */
 
+function gameWinners(gryffindor, slytherin) {
+  if (gryffindor[1] == "yes") gryffindor[0] += 150;
+  if (slytherin[1] == "yes") slytherin[0] += 150;
+  return gryffindor[0] > slytherin[0]
+    ? "Gryffindor wins!"
+    : gryffindor[0] == slytherin[0]
+    ? "It's a draw!"
+    : "Slytherin wins!";
+}
+
+/*
+
+*/
