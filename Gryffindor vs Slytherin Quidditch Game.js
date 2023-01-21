@@ -26,5 +26,9 @@ function gameWinners(gryffindor, slytherin) {
 }
 
 /*
-
+const gameWinners = (gryffindor, slytherin) => {
+  const g = gryffindor[0] + (gryffindor[1] === 'yes' ? 150 : 0);
+  const s = slytherin[0] + (slytherin[1] === 'yes' ? 150 : 0);
+  return g === s ? 'It\'s a draw!' : `${g > s ? 'Gryffindor' : 'Slytherin'} wins!`
+}
 */
