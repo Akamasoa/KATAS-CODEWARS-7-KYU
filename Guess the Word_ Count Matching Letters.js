@@ -20,3 +20,8 @@ The caller should ensure that the guessed word is always the same length as the 
 You may assume, however, that the two parameters will always be in the same case.
 */
 
+function countCorrectCharacters(correctWord, guess) {
+  if (correctWord.length !== guess.length) throw new Error();
+  return correctWord.split("").filter((v, i) => v === guess[i]).length;
+}
+
