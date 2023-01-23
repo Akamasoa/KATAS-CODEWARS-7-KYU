@@ -25,3 +25,17 @@ function countCorrectCharacters(correctWord, guess) {
   return correctWord.split("").filter((v, i) => v === guess[i]).length;
 }
 
+/*
+function countCorrectCharacters(correctWord, guess) {
+  if (correctWord.length !== guess.length) {
+    throw new Error();
+  }
+  let matches = 0
+  for (let i = 0; i < correctWord.length; i++) {
+    if (correctWord[i] === guess[i]) {
+      matches++;
+    }
+  }
+  return matches;
+}
+*/
