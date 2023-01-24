@@ -9,3 +9,19 @@ The sum to be calculated is 25 + 12 + 6 + 3 + 1, which is 47.
 */
 
 
+function halvingSum(n) {
+  let sum = 0;
+  while(n >=1){
+    sum += n;
+    n = Math.floor(n / 2);
+  }
+  return sum;
+}
+
+/*
+const halvingSum = n => n > 1 ? n + halvingSum(n / 2 | 0) : n
+
+function halvingSum(n) {
+    return n === 1 ? 1 : n + halvingSum(Math.floor(n/2))
+}
+*/
