@@ -11,7 +11,7 @@ hammingDistance('1010', '0101') == 4
 */
 
 function hammingDistance (a, b) {
-	let count = 0;
+  let count = 0;
   for (let i = 0; i < b.length; i++) {
     if (a.split("")[i] != b.split("")[i]) count++;
   }
@@ -21,5 +21,15 @@ function hammingDistance (a, b) {
 /*
 function hammingDistance(a,b){
   return a.split('').filter((n, i) => n != b[i]).length;
+}
+
+function hammingDistance(a,b){
+  var count = 0;
+  for (var i = 0; i < a.length; i++) {
+    if (a[i] !== b[i]) {
+      count++
+    }
+  }
+  return count;
 }
 */
