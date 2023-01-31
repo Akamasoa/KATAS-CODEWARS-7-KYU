@@ -1,3 +1,4 @@
+/*
 Description:
 One of the first algorithm used for approximating the integer square root of a positive integer n is known as "Hero's method", named after the first-century Greek mathematician Hero of Alexandria who gave the first description of the method. Hero's method can be obtained from Newton's method which came 16 centuries after.
 We approximate the square root of a number n by taking an initial guess x, an error e and repeatedly calculating a new approximate integer value x using: (x + n / x) / 2; we are finished when the previous x and the new x have an absolute difference less than e.
@@ -21,3 +22,13 @@ Note for JavaScript, Coffescript, Typescript:
 Don't use the double bitwise NOT ~~ at each iteration if you want to have the same results as in the tests and the other languages.
 */
 
+function intRac(n, guess) {
+let steps = 0;
+while (true) {
+steps++;
+const newGuess = Math.floor((guess + Math.floor(n / guess)) / 2);
+if (Math.abs(guess - newGuess) < 1) break;
+guess = newGuess;
+}
+return steps;
+}
