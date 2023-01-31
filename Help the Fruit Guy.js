@@ -8,3 +8,6 @@ The rotten fruit name will be in this camelcase (rottenFruit).
 The returned array should be in lowercase.
 */
 
+function removeRotten(bag) {
+return bag ? bag.map(x => x.toLowerCase().replace(/rotten/gi, "")) : [];
+}
