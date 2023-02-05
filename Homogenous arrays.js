@@ -14,3 +14,7 @@ The resultant arrays should be in the order they were originally in and should n
 No implicit type casting is allowed. A subarray [1, '2'] would be considered illegal and should be filtered out.
 */
 
+function filterHomogenous(arrays) {
+  const arr = arrays.filter(v => v.every((v, i, arr) => typeof v === typeof arr[0]));
+  return arr.filter(v => v.length !== 0);
+}
