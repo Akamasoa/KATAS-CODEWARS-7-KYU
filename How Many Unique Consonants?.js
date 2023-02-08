@@ -28,3 +28,8 @@ function countConsonants(str) {
     .join("")
     .replace(/[aeuio]/gi, "").length;
 }
+
+/*
+const countConsonants = str =>
+  new Set(str.toLowerCase().replace(/[^a-z]|[aeiou]/g, ``)).size;
+*/
