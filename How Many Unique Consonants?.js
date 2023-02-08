@@ -16,3 +16,15 @@ Examples
 "Count my unique consonants!!" ==> 7
 */
 
+function countConsonants(str) {
+  return [
+    ...new Set(
+      str
+        .replace(/[^a-z]/gi, "")
+        .toLowerCase()
+        .split("")
+    )
+  ]
+    .join("")
+    .replace(/[aeuio]/gi, "").length;
+}
