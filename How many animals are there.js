@@ -9,3 +9,4 @@ For example :
 "Mom, 3 rhinoceros and 6 snakes come to us!" The answer must be 9
 */
 
+const countAnimals = s => (s.match(/\d+/g) || []).reduce((r, e) => r + +e, 0);
