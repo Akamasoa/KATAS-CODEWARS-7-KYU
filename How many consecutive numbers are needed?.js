@@ -12,3 +12,9 @@ function consecutive(arr) {
   arrNew.push(i)};
   return arrNew.length - arr.length;
 }
+
+/*
+Short solution:
+
+const consecutive = arr => arr.length ? Math.max(...arr) - Math.min(...arr) - arr.length + 1 : 0;
+*/
