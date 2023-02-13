@@ -8,3 +8,21 @@ In this kata you should complete a function in order to know after how many visi
 function howManyTimes(annualPrice, individualPrice) {
   return Math.ceil(annualPrice/individualPrice);
 }
+
+/*
+Long solution:
+
+function howManyTimes(annual_price, individual_price) {
+  var visits = 0;
+  var cost = 0;
+  
+  while (true) {
+    cost += individual_price;
+    visits++;
+    
+    if (cost >= annual_price) {
+      return visits;
+    }
+  }
+}
+*/
