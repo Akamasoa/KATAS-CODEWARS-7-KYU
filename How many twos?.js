@@ -19,3 +19,9 @@ function twoCount(n) {
   }
   return twos;
 }
+
+/*
+function twoCount(n,c=0) {
+  return n % 2 === 0 ? twoCount(n/2,++c) : c;
+}
+*/
