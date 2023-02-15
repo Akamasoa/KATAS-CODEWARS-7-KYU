@@ -18,3 +18,15 @@ Complete function cutFruits that accepts argument fruits. Returns the result in 
 OK, that's all. I guess this is a 7kyu kata. If you agree, please rank it as 7kyu and vote very;-) If you think this kata is too easy or too hard, please shame me by rank it as you want and vote somewhat or none :[
 */
 
+function cutFruits(fruits){
+  const result = [];
+  fruits.forEach(x => {
+    if (!fruitsName.includes(x)) {
+      result.push(x);
+    } else {
+      const l = Math.ceil(x.length / 2);
+      result.push(x.slice(0, l), x.slice(l));
+    }
+  });
+  return result;
+}
