@@ -28,3 +28,8 @@ function dative(word) {
   return obj1.includes(str) ? word + "nek" : word + "nak";
 }
 
+/*
+function dative(word) {
+  return (/[aáoóuú]/.test(word)) ? word + "nak" : word + "nek";
+}
+*/
