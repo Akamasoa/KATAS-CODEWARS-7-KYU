@@ -17,3 +17,13 @@ Alternate capitalization
 String array revisal
 */
 
+function capitalize(s,arr){ 
+ let capS = s.split("");
+ for(let i = 0; i < arr.length; i++) {
+  if(capS[arr[i]]) {
+    capS[arr[i]] = capS[arr[i]].toUpperCase();
+   }
+ }
+ capS = capS.join("");
+ return capS;
+};
