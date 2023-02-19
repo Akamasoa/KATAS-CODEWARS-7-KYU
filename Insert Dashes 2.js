@@ -9,3 +9,9 @@ insertDashII(1012356895) --> 10123-56*89-5
 Zero shouldn't be considered even or odd.
 */
 
+function insertDashII(num) {
+  return String(num)
+    .replace(/([13579])(?=[13579])/g, "$1-")
+    .replace(/([2468])(?=[2468])/g, "$1*")
+}
+
