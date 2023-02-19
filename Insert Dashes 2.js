@@ -15,3 +15,24 @@ function insertDashII(num) {
     .replace(/([2468])(?=[2468])/g, "$1*")
 }
 
+/*
+function insertDashII(num) {
+  num = num.toString().split("");
+  const arr = [];
+  for (let i = 0; i < num.length; i++) {
+    arr.push(num[i]);
+    if (
+      num[i] % 2 === 0 &&
+      num[i + 1] % 2 === 0 &&
+      num[i] !== "0" &&
+      num[i + 1] !== "0"
+    ) {
+      arr.push("*");
+    }
+    if (num[i] % 2 !== 0 && num[i + 1] % 2 !== 0 && num[i + 1] !== undefined) {
+      arr.push("-");
+    }
+  }
+  return arr.join("");
+}
+*/
