@@ -12,3 +12,6 @@ For example, if we have a cube which has 4 cubes in a row, then the function sho
 For a visual representation: --> https://imgur.com/a/AN8A5DJ
 */
 
+function notVisibleCubes(n) {
+  return Math.max(0, (n - 2) ** 3);
+}
