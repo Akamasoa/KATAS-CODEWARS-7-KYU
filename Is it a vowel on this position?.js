@@ -12,3 +12,22 @@ checkVowel('cat', 4)  ->   false // this position doesn't exist
 P.S. If n < 0, return false
 */
 
+function checkVowel(string, position) {
+ let vowel = 'aeiou';
+  if(position < 0 || string.length <= position){
+    return false;
+  }else{
+    for(let i = 0; i<= vowel.length; i++){
+    if(string.toUpperCase()[position]=== vowel.toUpperCase()[i]){
+      return true
+    }
+  }
+  return false;  
+  }
+};
+
+/*
+With includes:
+
+const checkVowel=(s,p)=>'aeiouAEIOU'.includes(s[p])
+*/
