@@ -15,3 +15,14 @@ For a visual representation: --> https://imgur.com/a/AN8A5DJ
 function notVisibleCubes(n) {
   return Math.max(0, (n - 2) ** 3);
 }
+
+/*
+function notVisibleCubes(n) {
+  if (n == 0)
+    {return 0;}
+  else if (n == 1)
+    {return 0;}
+  else
+    {return (n - 2) ** 3;}
+}
+*/
