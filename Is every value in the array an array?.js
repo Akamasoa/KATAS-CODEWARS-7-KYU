@@ -11,3 +11,4 @@ Examples:
 [{1:1},{2:2}] => false
 */
 
+const arrCheck = value => value.every(v => Array.isArray(v));
