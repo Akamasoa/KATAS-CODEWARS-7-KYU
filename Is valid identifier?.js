@@ -16,3 +16,6 @@ wo rd
 !b2h
 */
 
+function isValid(idn) {
+  return /^[a-zA-Z$_][A-Za-z$_0-9]{0,}$/.test(idn);
+}
