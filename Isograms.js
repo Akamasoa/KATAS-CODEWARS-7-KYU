@@ -11,3 +11,7 @@ isIsogram "moose" = false
 isIsogram "aba" = false
 */
 
+function isIsogram(str){
+  return new Set(str.toUpperCase()).size == str.length;
+}
+
