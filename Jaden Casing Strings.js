@@ -11,3 +11,8 @@ Jaden-Cased:     "How Can Mirrors Be Real If Our Eyes Aren't Real"
 Link to Jaden's former Twitter account @officialjaden via archive.org
 */
 
+String.prototype.toJadenCase = function() {
+  return this.split(" ")
+    .map(w => w[0].toUpperCase() + w.slice(1))
+    .join(" ");
+};
