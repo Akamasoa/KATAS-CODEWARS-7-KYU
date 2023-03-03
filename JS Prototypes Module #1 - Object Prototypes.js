@@ -37,3 +37,4 @@ Note: This is a contrived example for learning purposes. This actual example is 
 Good luck! =)
 */
 
+Object.prototype.description = "TODO: GIVE ME A DESCRIPTION";
