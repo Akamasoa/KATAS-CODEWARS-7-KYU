@@ -8,3 +8,7 @@ Hint: watch out for side effects.
 
 Some good reading: MDN Docs about arrays
 */
+
+function withoutLast(arr) {
+  return arr.slice(0,arr.length-1);
+}
