@@ -10,3 +10,14 @@ var phrase = myObject.sayHello(); // phrase should be 'Hello!'
 The interesting part is that MyClass should only be accessible via the namespace and should not define any extra global variables. Code should not redefine an existing namespace, but should also function if the namespace is not previously defined.
 */
 
+// MyNamespace is provided. Define MyClass ...
+MyNamespace = MyNamespace || {};
+
+MyNamespace.MyClass = class {
+  constructor(arg) {
+    this.arg = arg;
+  }
+
+  sayHello() {
+    return this.arg;
+  }
