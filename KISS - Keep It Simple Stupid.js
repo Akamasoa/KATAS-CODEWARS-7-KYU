@@ -31,3 +31,16 @@ function isKiss(words) {
     ? "Good work Joe!"
     : "Keep It Simple Stupid";
 }
+
+/*
+function isKiss(words) {
+	let arrOfwords = words.split(" ")
+  let maxLength = arrOfwords.length
+	for (let word of arrOfwords) {
+		if (word.length > maxLength) {
+			return "Keep It Simple Stupid"
+		}
+	}
+	return "Good work Joe!"
+}
+*/
