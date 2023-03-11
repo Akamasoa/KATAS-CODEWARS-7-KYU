@@ -15,3 +15,10 @@ the remainder of the second pair is 1;
 the biggest remainder found is 6, and since 6 is an even number --> the string is returned in minuscule.
 */
 
+function kira(a, b, c) {
+  let arr = [];
+  for (let i = 0; i < a.length; i++) {
+    arr.push(a[i] % b[i]);
+  }
+  return Math.max(...arr) % 2 == 0 ? c.toLowerCase() : c.toUpperCase();
+}
