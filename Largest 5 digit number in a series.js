@@ -26,3 +26,14 @@ function solution(digits){
   return answer;
 }
 
+/*
+Since "substr" got deprecated:
+
+function solution(digits){
+  let max = '';
+  for (let i = 0; i < digits.length - 4; i++) {
+    max = Math.max(digits.slice(i, i + 5), max)
+  }
+  return max;
+}
+*/
