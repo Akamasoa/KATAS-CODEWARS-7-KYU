@@ -16,3 +16,26 @@ function largestPairSum(numbers) {
     .slice(-2)
     .reduce((a, b) => a + b, 0);
 }
+
+/*
+function largestPairSum (numbers) {  
+  let num1 = -2000000;
+  let pos = 0;
+  for(let a = 0; a < numbers.length; a++){
+    if(numbers[a] > num1){
+      num1 = numbers[a];
+      pos = a;
+    };
+  };
+  let num2 = -2000000;
+  for(let b = 0; b < numbers.length; b++){
+    if(b != pos){
+      if(numbers[b] > num2){
+          num2 = numbers[b];
+        };
+    };
+  };
+
+  return num1 + num2;
+};
+*/
