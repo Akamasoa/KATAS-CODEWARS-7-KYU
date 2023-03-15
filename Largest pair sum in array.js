@@ -10,3 +10,9 @@ For example
 Input sequence contains minimum two elements and every element is an integer.
 */
 
+function largestPairSum(numbers) {
+  return numbers
+    .sort((a, b) => a - b)
+    .slice(-2)
+    .reduce((a, b) => a + b, 0);
+}
