@@ -11,3 +11,7 @@ In javascript and CoffeeScript a list will be an array, a string or the list of 
 (courtesy of haskell.org)
 */
 
+function last(list){
+  let last = arguments[arguments.length - 1];
+  return last[last.length - 1] || last;
+}
