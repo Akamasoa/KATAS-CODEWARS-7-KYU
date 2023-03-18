@@ -9,3 +9,6 @@ solution('Testing String', 8) --> 'Testing ...'
 solution('Test', 8)           --> 'Test'
 */
 
+function solution(string, limit) {
+  return string.length > limit ? string.slice(0, limit) + "..." : string;
+}
