@@ -12,3 +12,23 @@ If no number was deleted from the starting array, your function should return th
 Note: N may be 1 or less (in the latter case, the first array will be []).
 */
 
+function findDeletedNumber(arr, mixArr) {
+    return arr.find(number => !mixArr.includes(number)) || 0;
+}
+
+/*
+function findDeletedNumber(arr, mixArr) {
+  for(let i = 0; i < arr.length; i++) {
+    if(mixArr.indexOf(arr[i]) < 0) {
+      return arr[i];
+    }
+  }
+  return 0;
+}
+
+function findDeletedNumber(arr, mixArr) {
+  let arrSum = arr.reduce((a,b) => a + b, 0)
+  let mixArrSum = mixArr.reduce((a,b) => a + b, 0)
+  return arrSum - mixArrSum
+}
+*/
