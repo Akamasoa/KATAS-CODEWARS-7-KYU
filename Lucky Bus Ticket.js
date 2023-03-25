@@ -20,3 +20,20 @@ function isLucky(ticket) {
     return false;
   }
 }
+
+/*
+function isLucky(ticket) {
+  if (ticket.length != 6 || ticket.length === 0) return false;
+  return (
+    ticket
+      .slice(0, Math.round(ticket.length) / 2)
+      .split("")
+      .reduce((a, b) => a + b * 1, 0) -
+      ticket
+        .slice(Math.round(ticket.length) / 2)
+        .split("")
+        .reduce((a, b) => a + b * 1, 0) ===
+    0
+  );
+}
+*/
