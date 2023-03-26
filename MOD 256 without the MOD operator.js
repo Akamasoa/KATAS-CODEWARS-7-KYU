@@ -38,3 +38,18 @@ function mod256WithoutMod(number){
     ? number - -256 * Math.floor(number / -256)
     : number - 256 * Math.floor(number / 256);
 }
+
+/*
+function mod256WithoutMod(number){
+  while (number > 255) number -= 256;
+  while (number < -255) number += 256;
+  return number;
+}
+
+function mod256WithoutMod(number) {
+  if(number < 0){
+    return -mod256WithoutMod(-number);
+  }
+  return number & 255;
+}
+*/
