@@ -33,3 +33,8 @@ Have fun coding it and please don't forget to vote and rank this kata! :-)
 I have also created other katas. Take a look if you enjoyed this kata!
 */
 
+function mod256WithoutMod(number){
+   return number < 0
+    ? number - -256 * Math.floor(number / -256)
+    : number - 256 * Math.floor(number / 256);
+}
