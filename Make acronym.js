@@ -14,3 +14,9 @@ Code wars -> C, w -> C W -> CW
 Note: There will be at least two words in the given string!
 */
 
+function toAcronym(input) {
+  return input
+    .split(" ")
+    .map(v => v[0].toUpperCase())
+    .join("");
+}
