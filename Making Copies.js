@@ -16,3 +16,6 @@ t = [1, 7, 3, 4]
 t_copy = [1, 2, 3, 4]
 */
 
+function copyList(l) {
+  return [...l];
+}
