@@ -20,3 +20,12 @@ The code also has to perform input validation, return :
 'array should contain only numbers' if any elements are not numbers
 */
 
+var func = function(item){
+   return item*1%2===0
+}
+
+function map(arr, func){
+    if (typeof func !=='function') return 'given argument is not a function'
+    if (arr.filter(v=>v*1==v).length!==arr.length) return 'array should contain only numbers'
+    return arr.map(v=>func(v))
+    }
