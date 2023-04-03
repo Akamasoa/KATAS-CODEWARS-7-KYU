@@ -53,3 +53,16 @@ function maxGap(numbers) {
     });
   return Math.abs(res.filter(v => !isNaN(v)).sort((a, b) => a - b)[0]);
 }
+
+/*
+function maxGap (numbers){
+ let res = numbers.sort((a,b) => a - b)
+ let arr = res[1] - res[0]
+ for(i=0; i < res.length; i++){
+    if(res[i+1] - res[i] > arr){
+      arr = res[i+1] - res[i]
+    }
+  }
+ return arr;
+}
+*/
