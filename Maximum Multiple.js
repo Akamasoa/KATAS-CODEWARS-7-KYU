@@ -35,3 +35,10 @@ Enjoy Learning !!
 Zizou
 */
 
+function maxMultiple(divisor, bound){
+  return bound - (bound % divisor);
+}
+
+/*
+const maxMultiple = (divisor, bound) => bound - bound % divisor;
+*/
