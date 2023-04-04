@@ -27,3 +27,22 @@ Enjoy Learning !!
 Zizou
 */
 
+function adjacentElementsProduct(array) {
+  let cache = -Infinity;
+  array.map((v, i, arr) =>
+    arr[i] * arr[i + 1] > cache ? (cache = arr[i] * arr[i + 1]) : cache
+  );
+  return cache;
+}
+
+/*
+function adjacentElementsProduct(array) {
+  let maxProduct = array[0] * array[1];
+  for (let i = 1; i < array.length; i++) {
+    product = array[i] * array[i + 1];
+    if (product > maxProduct)
+      maxProduct = product; 
+  }
+  return maxProduct;
+}
+*/
