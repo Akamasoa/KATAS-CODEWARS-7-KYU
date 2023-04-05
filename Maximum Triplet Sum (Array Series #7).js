@@ -41,3 +41,39 @@ function maxTriSum(numbers){
   const sorted = [...new Set(numbers.sort((a, b) => b - a))];
   return sorted[0] + sorted[1] + sorted[2];
 }
+
+/*
+function maxTriSum(numbers){
+  let one = -1000;
+  let two = -1000;
+  let three = -1000;
+  
+  for (var i = 0; i < numbers.length; i++) {
+  
+    if ((numbers[i] > one) && (numbers[i] != two) && (numbers[i] != three)){
+      if (one > two){
+        if (two > three){
+          three = two;
+        }
+          two = one;
+      }
+      else if (one > three){
+        three = one;
+      }
+      one = numbers[i];
+    }
+    
+    if ((numbers[i] > two) && (numbers[i] != one) && (numbers[i] != three)){
+      if (two > three){
+        three = two;
+      }
+      two = numbers[i];
+    }
+    
+    if ((numbers[i] > three) && (numbers[i] != two) && (numbers[i] != one)){
+      three = numbers[i];
+    }
+  }
+  return one + two + three;
+}
+*/
