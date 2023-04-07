@@ -14,3 +14,4 @@ countMissingCarriages("ABD") should return 1 because carriage C is missing.
 countMissingCarriages("BCF") should return 3 because carriages A, D, and E are missing.
 */
 
+const countMissingCarriages = s => s.slice(-1).charCodeAt() - s.length - 64;
