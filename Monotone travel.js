@@ -20,3 +20,17 @@ isMonotone([])     == True
 Such a sequence is also called monotone or monotonic sequence, hence the name isMonotone.
 */
 
+var isMonotone = function(arr) {
+  return arr.every((x, i) => i == 0 || arr[i] >= arr[i - 1]) ? true : false;
+};
+
+/*
+Long solution:
+
+var isMonotone = function(arr){
+  for(let i = 0;i < arr.length - 1; i++) {
+    if(arr[i] > arr[i + 1] ) return false;
+  }
+  return true; // << change this
+}
+*/
