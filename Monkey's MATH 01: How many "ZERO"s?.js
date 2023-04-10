@@ -19,3 +19,9 @@ two zero	%&B8
 Output will be a number of "0".
 */
 
+function countzero(s){
+  return +s.replace(/[abdegopq069DOPQR]/g,"0")
+               .replace(/[(][)]/g,"0")
+               .replace(/[%&B8]/g,"00")
+               .replace(/[^0]/g,"").length;
+}
