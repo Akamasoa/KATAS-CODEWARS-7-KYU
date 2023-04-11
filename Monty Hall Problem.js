@@ -11,3 +11,10 @@ Further information about this puzzle can be found on https://en.wikipedia.org/w
 In this program you are given an array of people who have all guessed on a door from 1-3, as well as given the door which includes the price. You need to make every person switch to the other door, and increase their chances of winning. Return the win percentage (as a rounded int) of all participants.
 */
 
+function montyHall(correctDoorNumber, participantGuesses) {
+  let count = 0;
+  for (let i = 0; i < participantGuesses.length; ++i)
+    if (participantGuesses[i] == correctDoorNumber)
+      count++;
+  return Math.round(100 * (participantGuesses.length - count) / participantGuesses.length);
+}
