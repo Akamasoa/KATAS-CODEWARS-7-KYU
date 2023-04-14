@@ -9,8 +9,8 @@ More Info: Generators (JS), Generators (Python), Generators (PHP), Generators (J
 */
 
 function* generator(a) {
-  let b = 0
+  let b = 0;
   while (++b) {
-    yield `${a} x ${b} = ${a*b}`
+    yield `${a} x ${b} = ${a*b}`;
   }
 }
