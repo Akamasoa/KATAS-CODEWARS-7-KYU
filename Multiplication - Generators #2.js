@@ -8,3 +8,9 @@ Your generator must take one parameter `a` then everytime the generator is calle
 More Info: Generators (JS), Generators (Python), Generators (PHP), Generators (Java)
 */
 
+function* generator(a) {
+  let b = 0
+  while (++b) {
+    yield `${a} x ${b} = ${a*b}`
+  }
+}
