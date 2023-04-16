@@ -31,3 +31,14 @@ function beasts(heads, tails) {
   const d = tails - h;
   return d >= 0 && h >= 0 && h === ~~h ? [tails - h, h] : "No solutions";
 }
+
+/*
+function beasts(heads, tails){
+  for(var i = 0; i <= tails; i++){
+    if( (i * 5 + (tails- i) * 2) == heads){
+      return [tails- i,i];
+    }
+  }
+  return 'No solutions';
+}
+*/
