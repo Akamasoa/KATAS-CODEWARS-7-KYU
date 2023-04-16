@@ -16,3 +16,16 @@ turtle hum
 turtle ham
 */
 
+function mutateMyStrings(stringOne, stringTwo){
+  let arr1 = stringOne.split('');
+  let arr2 = stringTwo.split('');
+  let answerString = [arr1.join('')];
+  
+  for(let i = 0; i < arr1.length; i++) {
+   if(arr1[i] !== arr2[i]) {
+      arr1[i] = arr2[i];
+      answerString.push(arr1.join(''));
+    }
+  }
+  return answerString.join('\n') + '\n';
+}
