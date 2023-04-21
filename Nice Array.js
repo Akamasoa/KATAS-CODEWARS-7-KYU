@@ -23,3 +23,23 @@ for n = 4, there is neither n - 1 = 3 nor n + 1 = 5
 Write a function named isNice/IsNice that returns true if its array argument is a Nice array, else false. An empty array is not considered nice.
 */
 
+function isNice(arr){
+    if (arr.length === 0) return false;
+  return arr.every(v => arr.includes(v + 1) || arr.includes(v - 1));
+}
+
+/*
+Long solution:
+function isNice(arr){
+let niceCount = 0;
+  for (let i = 0; i < arr.length; i++){
+    for (let j = 0; j < arr.length; j++){
+      if (arr[i] === arr[j]-1 || arr[i] === arr[j]+1){
+        niceCount++;
+        break;
+      }
+    }
+  }
+  return (niceCount === arr.length && arr.length !== 0)
+}
+*/
