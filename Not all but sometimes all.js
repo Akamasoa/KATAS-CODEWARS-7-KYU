@@ -19,3 +19,15 @@ function remove(str, what) {
     .map(v => (what[v] > 0 ? what[v]-- && (v = "") : v))
     .join("");
 }
+
+/*
+function remove(str, what) {
+  let result = [];
+  for (let char of str) {
+    if (what[char]) --what[char];
+    else result.push(char);
+  }
+  
+  return result.join("");
+}
+*/
