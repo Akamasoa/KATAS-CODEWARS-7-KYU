@@ -21,3 +21,10 @@ More Enjoyable Katas
 Enjoy Learning !!
 */
 
+function nthSmallest(arr, pos){
+  return arr.sort((a, b) => a - b)[pos - 1];
+}
+
+/*
+const nthSmallest = (arr, pos) => arr.sort((a, b) => a - b)[--pos];
+*/
