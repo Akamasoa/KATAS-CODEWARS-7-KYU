@@ -10,3 +10,11 @@ For example, given N = 13, the sequence is [1, 3, 6, 13], because . . . :
 Write a function that returns this sequence given a number N. Try generating the elements of the resulting list in ascending order, i.e., without resorting to a list reversal or prependig the elements to a list.
 */
 
+function climb(n) {
+  let seq = [];
+  while (n >= 1) {
+    seq.push(n);
+    n = Math.floor(n / 2);
+  }
+  return seq.reverse();
+}
