@@ -25,3 +25,34 @@ Part II
 If you liked this Kata, you can find the part II: Number encrypting: decypher, where your goal is to decypher the strings.
 */
 
+function cypher(string) {
+    let arrUp = ['O','I','R','E','A','S','G','T','B'];
+    let arrLow = ['o','l','z','e','a','s','b','t','888888','g'];
+    let arr = string.split('');
+    for (let i = 0; i < arr.length; i++) {
+        for (let j = 0; j < arrLow.length; j++) {
+            if (arr[i] == arrLow[j]) {
+                arr[i] = j; 
+            }
+            if (arr[i] == arrUp[j]) {
+                arr[i] = j; 
+            }
+        }
+    }
+    return arr.join('')
+}
+
+/*
+function cypher(string) {
+  return string.replace(/[Il]/g, '1')
+    .replace(/[Rz]/g, '2')
+    .replace(/[Ee]/g, '3')
+    .replace(/a/ig, '4')
+    .replace(/s/ig, '5')
+    .replace(/[Gb]/g, '6')
+    .replace(/t/ig, '7')
+    .replace(/B/g, '8')
+    .replace(/g/g, '9')
+    .replace(/o/ig, '0');
+}
+*/
