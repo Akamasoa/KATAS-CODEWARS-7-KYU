@@ -34,3 +34,6 @@ As you can see (1 + 2 + 4 + 2 + 3 + 6) = 18, and is the solution for the 3x2 gri
 There is a very simple solution to this!
 */
 
+function numberOfRectangles(m, n) {
+  return ((m ** 2 + m) * (n ** 2 + n)) / 4;
+}
