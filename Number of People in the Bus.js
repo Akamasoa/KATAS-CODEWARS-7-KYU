@@ -13,3 +13,5 @@ Please keep in mind that the test cases ensure that the number of people in the 
 The second value in the first pair in the array is 0, since the bus is empty in the first bus stop.
 */
 
+const number = busStops =>
+  busStops.reduce((rem, [on, off]) => rem + on - off, 0);
