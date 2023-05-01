@@ -16,3 +16,14 @@ Math.sqrt(c); // 1
 You are not required to support equality comparison between two Counter instances.
 */
 
+function Counter(){
+  this.value = 0;
+};
+
+Counter.prototype.incr = function() {
+  this.value++;
+};
+
+Counter.prototype.valueOf = function () {
+  return this.value;
+};
