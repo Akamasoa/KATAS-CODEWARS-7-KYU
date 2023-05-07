@@ -24,3 +24,14 @@ Have fun coding it and please don't forget to vote and rank this kata! :-)
 I have created other katas. Have a look if you like coding and challenges.
 */
 
+function numbersWithDigitInside(x, d) {
+  let sum = 0, prod = 1, count = 0;
+  for(let i = 1; i <= x; i++) {
+    if(i.toString().includes(d)) {
+      count++;
+      sum += i;
+      prod *= i;
+    }
+  }
+  return [count, sum, count === 0 ? 0 : prod];
+}
