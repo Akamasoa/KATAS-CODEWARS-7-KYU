@@ -20,3 +20,15 @@ Numerical Palindrome #4
 Numerical Palindrome #5
 */
 
+function palindrome(num) {
+  if (typeof num === "number" && num > 0) {
+    return (
+      "" + num ===
+      ("" + num)
+        .split("")
+        .reverse()
+        .join("")
+    );
+  }
+  return "Not valid";
+}
