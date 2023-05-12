@@ -21,3 +21,12 @@ var handOutGift = (function() {
     else list.push(name);
   }
 })();
+
+/*
+var names = {};
+
+function handOutGift(name) {
+  if (names[name]) throw "Error";
+  names[name] = true;
+}
+*/
