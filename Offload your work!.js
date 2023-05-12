@@ -10,3 +10,29 @@ If we need to contribute time to the project then return "I need to work x hour(
 If we don't have to contribute any time to the project then return "Easy Money!"
 */
 
+function workNeeded(projectMinutes, freelancers) {
+  const countMins = freelancers.reduce((acc,[hour, minutes]) => acc + hour * 60 + minutes, 0)
+  if (countMins >= projectMinutes) {
+    return "Easy Money!"
+  } else {
+    let extra = projectMinutes - countMins,
+        hours = 0, minutes = 0;
+
+    while (extra >= 60) {
+      hours++;
+      extra -= 60;
+    }
+    
+    minutes = extra;
+    
+    return `I need to work ${hours} hour(s) and ${minutes} minute(s)`;
+  }
+}
+
+/*
+With reduce:
+const workNeeded = (p, f) => (p = f.reduce((s,[h,m])=> s - h*60- m,p)) <= 0  ? 
+                "Easy Money!" :
+                `I need to work ${p/60|0} hour(s) and ${p%60} minute(s)`;
+
+*/
