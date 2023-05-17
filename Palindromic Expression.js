@@ -15,3 +15,6 @@ Call x the sum of the character codes of the full string we want to return.
 To pass the kata, make sure the function represented in your string will return x when it is given as an input.
 */
 
+function palindromicExpression() {
+  return "n => nn >= n";
+}
