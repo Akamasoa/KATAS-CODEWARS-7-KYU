@@ -10,3 +10,10 @@ Examples
 If the string to search for is "me", and the array to search is ["home", "milk", "Mercury", "fish"], the method should return ["home", "Mercury"].
 */
 
+function wordSearch(query, seq){
+  let reg = new RegExp(query,"i");
+  let res = seq.filter(function(val){
+    return reg.test(val);
+  });
+  return (res.length > 0) ? res : ["Empty"];
+}
