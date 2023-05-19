@@ -13,3 +13,9 @@ resistor_parallel(20, 20) will return 10.0
 resistor_parallel(20, 20, 40) will return 8.0
 */
 
+function resistor_parallel(){
+  let sum = 0;
+  for (let i = 0; i < arguments.length; ++i)
+    sum += 1 / arguments[i];
+  return 1 / sum;
+}
