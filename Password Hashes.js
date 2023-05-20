@@ -20,3 +20,10 @@ If you want to externally test a string, look at this website.
 As a side note, md5 can be exploited, so never use it for anything secure. The reason I used it in this kata is simply because it is a very common hashing algorithm and many people will recognize the name.
 */
 
+let crypto = require("crypto");
+function passHash(str) {
+  return crypto
+    .createHash("md5")
+    .update(str)
+    .digest("hex");
+}
