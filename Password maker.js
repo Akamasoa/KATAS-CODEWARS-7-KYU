@@ -12,3 +12,12 @@ Examples:
 "Keep Calm and Carry On"            --> "KCaC0"
 */
 
+function makePassword(phrase) {
+  return phrase
+    .split(' ')
+    .map(s => s[0])
+    .join('')
+    .replace(/i/ig, '1')
+    .replace(/o/ig, '0')
+    .replace(/s/ig, '5');
+}
