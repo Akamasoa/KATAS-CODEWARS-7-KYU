@@ -51,3 +51,12 @@ Command Pattern
 The original PatternCraft series (by John Lindquist) is a collection of Youtube videos that explains some of the design patterns and how they are used (or could be) on StarCraft.
 */
 
+class MarioAdapter {
+  constructor(mario) {
+    this.mario = mario;
+  }
+
+  attack(target) {
+    target.health -= this.mario.jumpAttack();
+  }
+}
