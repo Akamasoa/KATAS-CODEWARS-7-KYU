@@ -35,3 +35,13 @@ Note: Your program should be able to handle numbers up to 6 digits long
 * ignore these marks, they're for Python only
 */
 
+function permutationAverage(n){
+  let sum = 0;
+  
+  n = n.toString();
+  for (let i = 0; i < n.length; i++) {
+    sum += parseInt(n);
+    n = n.slice(-1) + n.substring(0, n.length - 1)
+    }
+  return Math.round(sum/(n.length));
+}
