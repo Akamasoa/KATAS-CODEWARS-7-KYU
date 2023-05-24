@@ -45,3 +45,22 @@ function permutationAverage(n){
     }
   return Math.round(sum/(n.length));
 }
+
+/*
+function permutationAverage(n) {
+  let arr = [];
+  let str = n.toString().split("");
+  for (let i = 0; i < str.length; i++) {
+    arr.push(rotLeft(str, str.length - i).join("") * 1);
+  }
+  return Math.round(arr.reduce((a, b) => a + b, 0) / arr.length);
+}
+function rotLeft(arr, n) {
+  let arrTemp = arr.map(v => v);
+  for (let i = 0; i < n; i++) {
+    let temp = arrTemp.shift();
+    arrTemp.push(temp);
+  }
+  return arrTemp;
+}
+*/
