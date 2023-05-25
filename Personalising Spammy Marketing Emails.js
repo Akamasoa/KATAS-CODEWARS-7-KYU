@@ -46,3 +46,9 @@ Note that the hash keys do not exactly match the tags, but there is a one to one
 ~~~
 */
 
+function personalise(campaign, person) {
+  return campaign
+    .replace(/<FAVOURITE PRODUCTS>/g, person.favourite_products)
+    .replace(/<CITY>/g, person.city)
+    .replace(/<NAME>/g, person.name);
+}
