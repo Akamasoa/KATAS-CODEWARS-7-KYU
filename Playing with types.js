@@ -14,3 +14,11 @@ typing({a:1,b:2});    //returns "object={"a":1,"b":2}"
 typing(function(){}); //returns "function=function (){}"
 typing(undefined);    //returns "undefined"
 */
+
+function typing(param) {
+  if (typeof param === "undefined") return `undefined`;
+  if (typeof param === "string") return `${typeof param}="${param}"`;
+  if (typeof param === "function") return `${typeof param}=${param}`;
+  return `${typeof param}=${JSON.stringify(param)}`;
+}
+
