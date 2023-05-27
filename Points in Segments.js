@@ -18,3 +18,10 @@ Examples:
 (7, [[0,7]]) => []
 */
 
+function segments(m, a) {
+  let res = [];
+  for (let point = 0; point <= m; point++) {
+    if (a.every(p => p[0] > point || p[1] < point)) res.push(point);
+  }
+  return res;
+}
