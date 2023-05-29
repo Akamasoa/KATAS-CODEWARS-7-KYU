@@ -9,3 +9,6 @@ a.length-1=3
 a includes [0,3] ,hence the function should return true
 */
 
+function isAllPossibilities(x){
+	return x.length > 0 ? x.every((a,i) => x.includes(i)) : false;
+}
