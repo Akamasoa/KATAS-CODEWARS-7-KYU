@@ -10,3 +10,14 @@ powerOf4(44) // returns false
 powerOf4("not a positive integer") // returns false
 */
 
+function powerOf4(n) {
+  // Verifica si el argumento es un número entero positivo
+  if (!Number.isInteger(n) || n < 1) {
+    return false;
+  }
+  // Comprueba si el número es una potencia de 4
+  while (n % 4 === 0) {
+    n /= 4;
+  }
+  return n === 1;
+}
