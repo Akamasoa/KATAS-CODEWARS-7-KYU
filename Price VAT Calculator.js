@@ -26,3 +26,7 @@ calc.getNet(100) === 83.33  //gross price of 100 => net will be 83.33
 calc.getVat(100) === 16.67  //gross price of 100 => var === 16.67```
 */
 
+function Calculator(vat) {
+  this.getNet = a => +((100 * a) / (100 + vat)).toFixed(2);
+  this.getVat = b => +((vat * b) / (100 + vat)).toFixed(2);
+}
