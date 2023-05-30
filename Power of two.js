@@ -13,3 +13,12 @@ power_of_two?(333)  # false
 Beware of certain edge cases - for example, 1 is a power of 2 since 2^0 = 1 and 0 is not a power of 2.
 */
 
+function isPowerOfTwo(n){
+  return Number.isInteger(Math.log2(n));
+}
+
+/*
+function isPowerOfTwo(n) {
+  return n === 0 ? false : (n & (n - 1)) == 0;
+}
+*/
