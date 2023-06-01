@@ -17,3 +17,17 @@ End each line of the string (including the last one) with a carriage return-line
 Note: You may assume that width and height will always be greater than zero.
 */
 
+function getRectangleString(width, height) {
+  let result = "";
+  for (let i = 0; i < height; i++) {
+    for (let j = 0; j < width; j++) {
+      if (i === 0 || i === height - 1 || j === 0 || j === width - 1) {
+        result += "*";
+      } else {
+        result += " ";
+      }
+    }
+    result += "\r\n";
+  }
+  return result;
+}
