@@ -21,3 +21,19 @@ If they are equal, return "Draw!"
 Note: You will always receive matrices of the same dimension.
 */
 
+function diagonal(matrix){
+  let n = matrix.length;
+  let sum1 = 0; // sum of elements in principal diagonal
+  let sum2 = 0; // sum of elements in secondary diagonal
+  for (let i = 0; i < n; i++) {
+    sum1 += matrix[i][i];
+    sum2 += matrix[i][n-i-1];
+  }
+  if (sum1 > sum2) {
+    return "Principal Diagonal win!";
+  } else if (sum2 > sum1) {
+    return "Secondary Diagonal win!";
+  } else {
+    return "Draw!";
+  }
+}
