@@ -11,3 +11,16 @@ maxProduct([7, 8, 9])                       // 72
 maxProduct([33, 231, 454, 11, 9, 99, 57])   // 104874
 */
 
+maxProduct = a => {
+  let x = 0, y = 0;
+  for (let i = 0; i < a.length; i++) {
+    if (a[i] > x) {
+      y = x;
+      x = a[i];
+    }
+    else if (a[i] > y) {
+      y = a[i];
+    }
+  }
+  return x * y;
+}
