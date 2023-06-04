@@ -15,7 +15,11 @@ function mainDiagonalProduct(mat) {
 }
 
 /*
-function mainDiagonalProduct(mat) {
-  return mat.reduce((accum, current, index) => accum * current[index], 1);
+function mainDiagonalProduct(mat){
+ let res = 1; 
+ for (let i = 0; i<mat.length; i++){
+ res *= mat[i][i];
+ }
+ return res;
 }
 */
