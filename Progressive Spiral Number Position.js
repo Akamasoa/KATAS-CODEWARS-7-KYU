@@ -28,3 +28,18 @@ If you had fun with this, also try some follow up kata: progressive spiral numbe
 [Base idea taken from here]
 */
 
+function layers(n) {
+  let layer = 1;
+  let a = 1;
+  while (a ** 2 < n) {
+    layer += 1;
+    a += 2;
+  }
+  return layer;
+}
+
+/*
+function layers(n){
+  return Math.ceil((Math.sqrt(n)+1)/2);
+}
+*/
