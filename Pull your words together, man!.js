@@ -24,3 +24,6 @@ Input	Output
 (Any translations (eg: to Java/C#/C++/Typescript) would be greatly appreciated!)
 */
 
+function sentencify(words) {
+  return words.join(" ")[0].toUpperCase() + words.join(" ").slice(1) + ".";
+}
