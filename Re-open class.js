@@ -15,3 +15,4 @@ returns
 "ABC"
 */
 
+String.prototype.myNewMethod = String.prototype.toUpperCase;
