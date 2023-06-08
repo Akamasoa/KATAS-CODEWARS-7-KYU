@@ -19,3 +19,6 @@ You have to create the function fibonacci that receives n and returns f(n). You 
 PREVIOUS (RECURSION #1 - FACTORIAL)
 */
 
+const fibonacci = n => {
+  return (n <= 2) ? 1 : fibonacci(n - 2) + fibonacci(n - 1);
+};
