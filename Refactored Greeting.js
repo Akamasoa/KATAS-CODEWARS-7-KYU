@@ -11,3 +11,10 @@ joe.greet('Kate'); // should return 'Hello Kate, my name is Joe'
 joe.name           // should == 'Joe'
 */
 
+function Person(name){
+  this.name = name
+}
+
+Person.prototype.greet = function(yourName){
+  return "Hello " + yourName + ", my name is " + this.name
+}
