@@ -10,3 +10,12 @@ Examples (Input --> Output)
 "a234"   -->  false
 */
 
+function validatePIN (pin) {
+	let n = pin.length;
+  if( n != 4 && n != 6)
+  		return false;
+  for (let i in pin)
+  		if (pin[i] > '9' || pin[i] < '0')
+      		return false;
+  return true;
+}
