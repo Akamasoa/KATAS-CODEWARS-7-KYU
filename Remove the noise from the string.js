@@ -11,3 +11,20 @@ removeNoise("h%e&·%$·llo w&%or&$l·$%d")
 // returns hello world
 */
 
+function removeNoise(str){
+	let special = ["%","$","&","/","#","·","@","|","º","\\","ª"];
+	str = str.split('');
+	let results = [];
+	for (let i = 0; i<str.length; i++) {
+		if (!special.includes(str[i])) {
+			results.push(str[i]);
+		}
+	}
+	return results.join('');
+}
+
+/*
+function removeNoise(str){
+	return str.replace(/[%$&/#·@|º\\ª]/g, '');
+}
+*/
