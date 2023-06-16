@@ -13,3 +13,4 @@ Output:
 'alpha beta gamma delta'
 */
 
+const removeDuplicateWords = s => [...new Set(s.split(" "))].join(" ");
