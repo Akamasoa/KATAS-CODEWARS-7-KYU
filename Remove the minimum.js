@@ -15,3 +15,26 @@ Examples
 * Input: [2,2,1,2,1], output = [2,2,2,1]
 */
 
+function removeSmallest(numbers) {
+  let smallest;
+  let newNums = [];
+  numbers.forEach(function(num) {
+    if (smallest > num || smallest === undefined) {
+      smallest = num;
+    }
+  });
+  let index = numbers.indexOf(smallest);
+  numbers.forEach(function(n, i) {
+    if (i !== index) {
+      newNums.push(n);
+    }
+  });
+  return newNums;
+}
+
+/*
+function removeSmallest(numbers) {
+  let indexOfMin = numbers.indexOf(Math.min(...numbers));
+  return [...numbers.slice(0, indexOfMin), ...numbers.slice(indexOfMin + 1)];
+}
+*/
