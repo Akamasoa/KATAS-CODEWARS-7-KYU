@@ -14,3 +14,4 @@ String.prototype.replace(your regexp, "")
 Have fun :)
 */
 
+const reg = /<[^>]*>/g;
