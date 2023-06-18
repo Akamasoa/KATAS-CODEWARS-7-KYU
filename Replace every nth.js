@@ -23,3 +23,23 @@ new_value: 'o'
 As you can see in the example: The first changed is the 2nd 'a'. So the start is always at the nth suitable char and not at the first!
 */
 
+function replaceNth(text, n, oldValue, newValue) {
+  let count = 0;
+  let newString = '';
+  for(ñet i = 0; i < text.length; i++) {
+    if(text[i] === oldValue) {
+      count++
+    } else {
+      newString += text[i];
+    }
+    if(count % n == 0 && text[i] === oldValue) {
+      newString += newValue;
+    } else if(text[i] === oldValue && count % n != 0) {
+      newString += text[i];
+    }
+  }
+  if(n <= 0) {
+    return text;
+  }
+  return newString;
+}
