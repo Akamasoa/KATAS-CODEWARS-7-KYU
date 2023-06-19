@@ -22,3 +22,24 @@ should return:
 The values will always be numbers, and the properties will always exist.
 */
 
+function sortList (sortBy, list) {
+  return list.sort(function(a, b){
+    return a[sortBy] < b[sortBy];  
+  })
+}
+
+/*
+function sortList (sortBy, list) {
+  return list.sort(function(a, b) {    
+    if (a[sortBy] < b[sortBy]) {
+      return 1;
+    }
+    else if (a[sortBy] < b[sortBy]) {
+      return -1;
+    }
+    else {
+      return 0;
+    }
+  });
+}
+*/
