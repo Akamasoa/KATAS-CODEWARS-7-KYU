@@ -36,3 +36,14 @@ Note: an extra line feed character is needed at the end of the string. Case n=0 
 STRINGSALGORITHMSASCII ARTPUZZLES
 */
 
+function pyramid(n) {
+  const arr = [];
+  let i = 0;
+  for (i; i < n - 1; i++) {
+    arr.push(
+      " ".repeat(n - i - 1) + "/" + " ".repeat(i) + " ".repeat(i) + "\\"
+    );
+  }
+  arr.push("/" + "_".repeat(i) + "_".repeat(i) + "\\" + "\n");
+  return arr.join("\n");
+}
