@@ -14,3 +14,22 @@ Examples
 150 will return "None"
 */
 
+function reverseFactorial(num) {
+  let f = 1, x = 1;
+  while( f < num ) f = ++x*f;
+  return f == num ? x + "!" : "None"
+}
+
+/*
+function reverseFactorial(num) {
+  var product = 1,
+      count = 1;
+  while(product!=num){
+    count++;
+    product = product*count;
+    if(product>num)
+      return "None";
+  }
+  return ""+count+"!";
+}
+*/
