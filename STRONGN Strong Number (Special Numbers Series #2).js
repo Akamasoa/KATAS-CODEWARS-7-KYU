@@ -33,3 +33,12 @@ Explanation:
 Since , the sum of its digits' factorial of 1! + 5! + 0! = 122 is not equal to number itself (150) , Then it's Not Strong .
 */
 
+function strong(n) {
+ if (n === 1) return 'STRONG!!!!'
+ let res=[]
+ let arr = n.toString().split('').map((v)=>{
+ for (let i = 1; i < v; i++){
+ res.push(i)
+ }})
+  return res.reduce((a,b)=> a * b, 1) + 1== n ? 'STRONG!!!!' : "Not Strong !!";
+}
