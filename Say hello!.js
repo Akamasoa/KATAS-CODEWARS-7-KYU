@@ -11,3 +11,13 @@ greet("") === null; // Return null if input is empty string
 greet(null) === null; // Return null if input is null
 */
 
+function greet(name) {
+  return name ? 'hello ' + name + '!' : null;
+}
+
+/*
+function greet(name) {
+  if (name == null || name.length == 0) return null;
+  return `hello ${name}!`;
+}
+*/
