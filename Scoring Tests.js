@@ -31,3 +31,8 @@ which is: 10 + 0 - 1 = 9
 because: 4*3 + 3*-1 - 3*2 = 3
 */
 
+function scoreTest(str, right, omit, wrong) {
+  return str
+    .map(v => (v === 0 ? right : v === 1 ? omit : -wrong))
+    .reduce((a, b) => a + b, 0);
+}
