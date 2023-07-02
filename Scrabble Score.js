@@ -36,3 +36,9 @@ Empty string should return 0. The string can contain spaces and letters (upper a
 "ca bba g  e" --> 14
 */
 
+function scrabbleScore(str) {
+  return str
+    .replace(/[^a-z]/gi, "")
+    .split("")
+    .reduce((a, b) => a + $dict[b.toUpperCase()] * 1, 0);
+}
