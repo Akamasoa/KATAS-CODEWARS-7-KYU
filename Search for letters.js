@@ -11,3 +11,9 @@ For instance:
 "a   **&  cZ"  =>  "10100000000000000000000001"
 */
 
+function change(string) {
+  string = string.toLowerCase()
+  return 'abcdefghijklmnopqrstuvwxyz'.split('').map(function (c) { 
+    return string.indexOf(c) !== -1 ? 1 : 0;
+  }).join('');
+}
