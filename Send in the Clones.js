@@ -71,3 +71,41 @@ const clonewars = n => [
     .reduce((a, b) => a + b, 0)
 ];
 
+/*
+const clonewars = function(kataPerDay) {
+  switch (kataPerDay) {
+    case 0 :
+      return [1,0];
+    case 1 :
+      return [1,1];
+    case 2 :
+      return [2,4];
+    case 3 :
+      return [4,11];
+    case 4 :
+      return [8, 26];
+    case 5 :
+      return [16,57];
+    case 6 :
+      return [32, 120];
+    case 7 :
+      return [64, 247];
+    case 8 :
+      return [128, 502];
+    case 9 :
+      return [256, 1013];
+    case 10 :
+      return [512, 2036];
+    case 11 :
+      return [1024, 4083];
+    case 12 :
+      return [2048, 8178];
+    case 13 :
+      return [4096, 16369];
+    case 14 :
+      return [8192, 32752];
+    case 15 :
+      return [16384, 65519];
+  } 
+}
+*/
