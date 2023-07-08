@@ -19,3 +19,10 @@ Sum of a sequence (this kata)
 Sum of a Sequence [Hard-Core Version]
 */
 
+const sequenceSum = (begin, end, step) => {
+  let sum = 0;
+  for (let i = begin; i <= end; i += step) {
+    sum += i;
+  }
+  return sum;
+};
