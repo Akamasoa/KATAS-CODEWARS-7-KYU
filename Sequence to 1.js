@@ -14,3 +14,15 @@ Crystal    -9999 < n < 9999
 Ruby       -9999 < n < 9999
 */
 
+function seqToOne(n){
+  const arr = [];
+  while (n !== 1) {
+    if (n > 1) {
+      arr.push(n--);
+    } else {
+      arr.push(n++);
+    }
+  }
+  arr.push(1);
+  return arr;
+}
