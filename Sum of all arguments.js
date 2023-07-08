@@ -15,3 +15,6 @@ JS/Coffeescript : http://lmgtfy.com/?q=Javascript+arguments+variable
 C: https://www.geeksforgeeks.org/variadic-functions-in-c/
 */
 
+function sum(...arr) {
+  return arr.reduce((total, next) => total + next, 0);
+}
