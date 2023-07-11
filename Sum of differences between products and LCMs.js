@@ -17,3 +17,21 @@ Thus the result should be:
 This is a kata that I made, among other things, to let some of my trainees familiarize with the euclidean algorithm, a really neat tool to have on your belt ;)
 */
 
+function sumDifferencesBetweenProductsAndLCMs(arr){
+	let sum = 0;
+	for (let i = 0; i < arr.length; i++) {
+		let product = arr[i][0] * arr[i][1];
+		let first = arr[i][0];
+		let second = arr[i][1];
+		while (first !== second) {
+			if (first < second) {
+				first += arr[i][0];
+			}
+      if (second < first) {
+				second += arr[i][1];
+			}
+		} 
+    let lcm = first;
+		sum += product - lcm;
+	} return sum;
+}
