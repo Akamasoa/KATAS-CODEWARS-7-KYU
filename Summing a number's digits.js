@@ -10,3 +10,23 @@ For example: (Input --> Output)
 Let's assume that all numbers in the input will be integer values.
 */
 
+function sumDigits(number) {
+  return Math.abs(number)
+    .toString()
+    .split("")
+    .reduce((total, next) => total + Number(next), 0);
+}
+
+/*
+function sumDigits(number) {
+		let i = 0;
+    let sum = 0;
+    number = Math.abs(number)
+    while(number != 0)
+    {
+    		sum += number % 10
+        number = Math.floor(number/10)
+    }
+    return sum;
+}
+*/
