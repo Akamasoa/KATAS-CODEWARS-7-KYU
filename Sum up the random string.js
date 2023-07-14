@@ -15,3 +15,6 @@ The numbers are 2015, 6
 Sum is 2021.
 */
 
+function sumFromString(str) {
+  return (str.match(/\d+/g) || []).map(Number).reduce((a, b) => a + b, 0);
+}
