@@ -19,3 +19,15 @@ Note: your solution must NOT modify the original list
 Another Kata involving nested lists here (it's still in beta - more honor points for completing :D): https://www.codewars.com/kata/5786f020e55533ebb7000153
 */
 
+function SumSquares(array){
+    let output = 0;
+    
+    for (let i = 0; i < array.length; i++){
+    	if (Array.isArray(array[i])){
+    		output += SumSquares(array[i])
+    	} else {
+    		output +=  array[i] * array[i]
+    	}
+    }
+    return output;
+}
