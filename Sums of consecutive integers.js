@@ -14,3 +14,6 @@ SumOfConsecutiveIntegers.Position(4, 14, 3) => 5
 Assume there will always be a sum of x consecutive integers that totals to y and n will never be indexed out of bounds.
 */
 
+function position(x, y, n) {
+  return y / x - (x - 1) / 2 + n;
+}
