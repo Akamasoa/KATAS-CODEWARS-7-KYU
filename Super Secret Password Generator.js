@@ -15,3 +15,10 @@ function createSSP(password) {
       Object.keys(dict).includes(v.toLowerCase()) ? dict[v.toLowerCase()] : v
     ).join``;
 }
+
+/*
+var chars = {a: '@', s: '$', o: 0, h: 5, x: '*'};
+function createSSP(password){
+  return password.replace(/[asohx]/gi, function(m){ return chars[m.toLowerCase()] });
+}
+*/
