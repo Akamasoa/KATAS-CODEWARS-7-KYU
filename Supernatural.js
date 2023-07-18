@@ -40,3 +40,12 @@ The guys call you:
 */
 */
 
+function bob(str) {
+  return (
+    [str].map(v =>
+      drunkenDoodling[v] == undefined
+        ? "I have friggin no idea yet, idjits!"
+        : drunkenDoodling[v] + ", idjits!"
+    ) + ""
+  );
+}
