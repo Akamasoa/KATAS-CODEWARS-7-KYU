@@ -16,3 +16,13 @@ Examples
 "rrrrr rrrrr"  -->  16    # 10 plates, 2 free
 */
 
+function totalBill(str) {
+  str = str.split(' ').join('');
+  let res = 0;
+  for (let i = 0; i < str.length; i++) {
+    if ((i+1) % 5) {
+      res++;
+    }
+  }
+  return res * 2;
+}
