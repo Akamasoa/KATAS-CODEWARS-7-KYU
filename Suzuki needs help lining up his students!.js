@@ -35,3 +35,13 @@ Help Suzuki rake his garden!
 How many stairs will Suzuki climb in 20 years?
 */
 
+function lineupStudents(students) {
+  return students
+    .trim()
+    .split(/\s+/)
+    .sort((a, b) => b.length - a.length || b.localeCompare(a));
+}
+
+/*
+
+*/
