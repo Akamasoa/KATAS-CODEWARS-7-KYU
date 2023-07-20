@@ -25,3 +25,34 @@ function swapHeadAndTail(arr) {
   );
   return [].concat(tail, center, head);
 }
+
+/*
+function swapHeadAndTail(arr) {
+  let a1 = [],
+      a2 = [],
+      a3 = [];
+  if (arr.length%2==0)
+  {
+    for (let i = 0; i < arr.length; ++i)
+      if (i < arr.length / 2)
+        a1.push(arr[i]);
+      else
+        a3.push(arr[i]);
+  }
+  else
+  {
+    for (let i = 0; i < arr.length; ++i)
+      if (i< ( arr.length - 1) / 2)
+        a1.push(arr[i]);
+      else if (i == (arr.length - 1) / 2)
+        a2.push(arr[i])
+      else
+        a3.push(arr[i]);
+  }
+  for (let i = 0; i < a2.length; ++i)
+    a3.push(a2[i]);
+  for (let i = 0; i < a1.length; ++i)
+    a3.push(a1[i]);
+  return a3;
+}
+*/
