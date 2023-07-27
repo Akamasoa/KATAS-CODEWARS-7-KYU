@@ -10,3 +10,6 @@ To remove: numbers and these characters: %$&/£?@
 Result should be all in uppercase.
 */
 
+function radLadies(name) {
+  return name.replace(/[^a-z\s!]/gi, "").toUpperCase();
+}
