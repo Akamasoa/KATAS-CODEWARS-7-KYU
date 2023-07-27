@@ -30,3 +30,27 @@ As an output you would expect in this case:
 ["Stefan", "Raj", "Marie", "Edward", "Amy", "Alexa", "Liz", "Claire", "Juan", "Katie", "Luke", "Dee"])
 */
 
+function binRota(arr){
+    let newArr = [];
+    for (let i = 0; i < arr.length; i++) {
+        if (i % 2 == 0) {
+            for (let j = 0; j < arr[i].length; j++) {
+                newArr.push(arr[i][j]);
+            }
+        }
+        else {
+            for (let j = arr[i].length - 1; j >= 0; j--) {
+                newArr.push(arr[i][j]);
+            }
+        }
+    }
+    return newArr;
+}
+
+/*
+function binRota(arr) {
+    return arr.reduce(function(a, b, index) {
+        return (index % 2 === 0) ? a.concat(b) : a.concat(b.reverse());
+    });
+}
+*/
