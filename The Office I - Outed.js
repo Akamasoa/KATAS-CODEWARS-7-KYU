@@ -1,4 +1,5 @@
-/*DESCRIPTION:
+/*
+DESCRIPTION:
 Your colleagues have been looking over you shoulder. When you should have been doing your boring real job, you've been using the work computers to smash in endless hours of codewars.
 
 In a team meeting, a terrible, awful person declares to the group that you aren't working. You're in trouble. You quickly have to gauge the feeling in the room to decide whether or not you should gather your things and leave.
@@ -31,3 +32,11 @@ function outed(meet, boss){
     }
   return sum / count <= 5 ? 'Get Out Now!' : 'Nice Work Champ!';
 }
+
+/*
+function outed(meet, boss) {
+  let names = Object.keys(meet)
+  let score = names.reduce((s,v) => s + meet[v], 0) + meet[boss]
+  return score / names.length > 5 ? 'Nice Work Champ!' : 'Get Out Now!'
+}
+*/
