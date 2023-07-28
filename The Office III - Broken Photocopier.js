@@ -12,3 +12,20 @@ The Office IV - Find a Meeting Room
 The Office V - Find a Chair
 */
 
+function broken(x){
+let s = '';
+for(let i  =0; i < x.length; i++){
+  if(x[i] === '1'){
+    s += 0;
+  }else{
+    s += 1;
+  }
+}
+  return s;
+}
+
+/*
+function broken(x) {
+  return x.replace(/[01]/g, n => (n === "1" ? (n = "0") : "1"));
+}
+*/
