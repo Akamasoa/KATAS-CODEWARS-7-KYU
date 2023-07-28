@@ -15,3 +15,17 @@ The Office II - Boredeom Score
 The Office III - Broken Photocopier
 The Office V - Find a Chair
 */
+
+function meeting(x){
+  for (let i=0; i < x.length; ++i)
+    if (x[i]=='O')
+      return i;
+  return 'None available!';
+}
+
+/*
+function meeting(x) {
+  if (x.indexOf("O") === -1) return "None available!";
+  return x.indexOf("O");
+}
+*/
