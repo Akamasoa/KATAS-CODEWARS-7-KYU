@@ -24,3 +24,24 @@ The Office III - Broken Photocopier
 The Office IV - Find a Meeting Room
 */
 
+function meeting(x, need) {
+ if (need === 0) return 'Game On';
+    let chairs = [];
+    let totalChairs = 0;
+    for (let i = 0; i < x.length; i++) {
+      let chairsInRoom = x[i][1] - x[i][0].length;
+      if (chairsInRoom > 0) {
+        if (chairsInRoom >= need) {
+          chairs.push(need);
+          return chairs;
+        } else {
+          chairs.push(chairsInRoom);
+          totalChairs += chairsInRoom;
+          need -= chairsInRoom;
+        }
+      } else {
+        chairs.push(0);
+      }
+    }
+    return totalChairs < need ? 'Not enough!' : chairs;
+}
