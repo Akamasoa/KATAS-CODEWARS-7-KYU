@@ -18,3 +18,22 @@ Your task is to...wait for it... write your own span function !!!
 Hint/Challenge: If you have completed the takeWhile function and the dropWhile function, then you can solve this problem in one line!
 */
 
+function span(arr, predicate) {
+  for (let i = 0; i < arr.length; i++) {
+    if (!predicate(arr[i])) break
+  }
+  return [
+    arr.slice(0, i),
+    arr.slice(i)
+  ]
+}
+
+/*
+function span(arr, predicate) {
+  let i = 0;
+  while (i < arr.length && predicate(arr[i])) {
+    i++;
+  }
+  return [arr.slice(0, i), arr.slice(i)];
+}
+*/
