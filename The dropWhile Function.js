@@ -15,3 +15,19 @@ function dropWhile(arr, pred) {
   while (arr.length && pred(arr[0])) arr.shift()
   return arr;
 }
+
+/*
+function dropWhile(arr, pred) {
+  for (let i = 0; i < arr.length && pred(arr[i]); ++i) ;
+  return arr.slice(i)
+}
+
+function dropWhile(arr, pred) {
+  let result = [];
+  
+  for (let i=0; i<arr.length; ++i)
+    if (!pred(arr[i]))
+      break;
+  return arr.slice(i);
+}
+*/
