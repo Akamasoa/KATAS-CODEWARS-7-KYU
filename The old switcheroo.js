@@ -12,3 +12,21 @@ vowel2index('') == ''
 Your function should be case insensitive to the vowels.
 */
 
+function vowel2index(str) {
+  return str.replace(/[aeiou]/gi, (m, i) => i + 1);
+}
+
+/*
+function vowel2index(str) {
+   let arr = str.split(''),
+       i = 0,
+       len = arr.length,
+       vowels = ['a','e','i','o','u'];
+   
+   for (let i = 0; i < len; i++) {
+     if ( vowels.indexOf(arr[i].toLowerCase()) > -1 ) arr[i] = i+1;
+   }
+   
+   return arr.join('');
+}
+*/
