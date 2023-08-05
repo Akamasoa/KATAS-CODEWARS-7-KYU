@@ -11,3 +11,15 @@ getMean([1,3,2,4], 1, 2) should return -1 because x is not higher than 1.
 getMean([1,3,2,4], 2, 8) should return -1 because 8 is higher than the array's length.
 */
 
+function getMean(arr, x, y) {
+	let m1=0, m2=0, array1=[];	
+	if(x < 2 || y < 2 || x > arr.length || y > arr.length)	return -1;
+  
+	for(let i=arr.length-1; i>=0; i--)	array1.push(arr[i]);
+	
+	for(let i=0; i < arr.length; i++){
+		if(i<x)m1 += arr[i];
+		if(i<y)m2 += array1[i]; 
+	}
+	return (m1/x + m2/y)/2;
+}
