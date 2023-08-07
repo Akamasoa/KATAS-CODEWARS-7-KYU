@@ -9,3 +9,13 @@ function reject(array, predicate) {
   return array.filter(el => !predicate(el));
 }
 
+/*
+function reject(array, predicate) {
+console.log(predicate);
+let arr = [];
+  for(let i = 0; i < array.length; i++){ 
+  if(predicate(array[i]) % 2 === 0){arr.push(array[i]);}
+  }
+  return arr;
+}
+*/
