@@ -25,3 +25,15 @@ As part of this puzzle, there is three hints or clues on solving this. I won't t
 Given the input as a string - Return the sum of the two variables as int.
 */
 
+function theVar(theVariables) {
+  return theVariables
+    .split("+")
+    .map(v => v.charCodeAt() - 96)
+    .reduce((a, b) => a + b, 0);
+}
+
+/*
+function theVar(theVariables) {
+  return theVariables.charCodeAt(0) + theVariables.charCodeAt(2) - 2 * 96;
+}
+*/
