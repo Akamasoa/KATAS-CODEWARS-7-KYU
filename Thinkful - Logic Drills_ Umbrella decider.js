@@ -13,3 +13,15 @@ For example, take_umbrella('sunny', 0.40) should return False.
 As an additional challenge, consider solving this kata using only logical operaters and not using any if statements.
 */
 
+function takeUmbrella(weather, chance) {
+  return weather == 'rainy' ||  (weather == 'cloudy' && chance > 0.2) || (weather == 'sunny' && chance > 0.5);
+}
+
+/*
+function takeUmbrella(weather, chance) {
+  if (weather == "sunny" && chance <= 0.5) return false;
+  if (weather == "rainy") return true;
+  if (weather == "cloudy" && chance <= 0.2) return false;
+  return true;
+}
+*/
