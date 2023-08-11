@@ -16,3 +16,17 @@ write a function inverse_slice() that takes three arguments: a list items, an in
 The input will always be a valid list, a and b will always be different integers equal to or greater than zero, but they may be zero or be larger than the length of the list.
 */
 
+function inverseSlice(items, a, b) {
+  return items.slice(0, a).concat(items.slice(b));
+}
+
+/*
+function inverseSlice(items, a, b) {
+  let arr=[];
+  for (let i=0; i<a; ++i)
+    arr.push(items[i]);
+  for (let i=b; i<items.length; ++i)
+    arr.push(items[i]);
+  return arr;
+}
+*/
