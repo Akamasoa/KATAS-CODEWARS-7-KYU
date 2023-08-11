@@ -20,3 +20,12 @@ For example:
 Adding vectors when you have their components is easy: just add the two x components together and the two y components together to get the x and y components for the vector sum.
 */
 
+class Vector {
+  constructor(x, y) {
+    this.x = x;
+    this.y = y;
+  }
+  add(v) {
+    return new Vector(this.x + v.x, this.y + v.y);
+  }
+}
