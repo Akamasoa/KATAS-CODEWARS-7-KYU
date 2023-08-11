@@ -8,3 +8,4 @@ For example:
 Do not modify the input list.
 */
 
+const longest = words => Math.max(...words.map(x => x.length));
