@@ -11,6 +11,24 @@ STRINGSREGULAR EXPRESSIONSFUNDAMENTALS
 */
 
 function areaCode(text) {
+  let str = '';
+  for(let i = 0; i < text.length; i++){
+    if(text[i] == '('){
+      str += text[i+1];
+      str += text[i+2];
+      str += text[i+3];
+      break;
+    }
+  }
+  return str;
+
+/*
+function areaCode(text) {
   return text.match(/\((\d{3})\)/)[1];
 }
 
+  function areaCode(text) {
+  return text.slice(text.indexOf('(') + 1, text.indexOf(')'));
+}
+}
+*/
