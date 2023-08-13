@@ -10,3 +10,7 @@ The returned area code should be a string, not a number. Every phone number is f
 STRINGSREGULAR EXPRESSIONSFUNDAMENTALS
 */
 
+function areaCode(text) {
+  return text.match(/\((\d{3})\)/)[1];
+}
+
