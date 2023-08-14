@@ -8,3 +8,6 @@ This challenge extends the previous repeater() challenge. Just like last time, y
 '"WuB" repeated 6 times is: "WuBWuBWuBWuBWuBWuB"'
 */
 
+function repeater(string, n) {
+  return `"${string}" repeated ${n} times is: "${string.repeat(n)}"`;
+}
