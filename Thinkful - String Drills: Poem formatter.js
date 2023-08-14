@@ -16,3 +16,23 @@ Try to solve this challenge with the str.split() and the str.join() string metho
 Every sentence will end with a period, and every new sentence will have one space before the previous period. Be careful about trailing whitespace in your solution.
 */
 
+function formatPoem(poem) {
+  return poem.split(". ").join(".\n");
+}
+
+/*
+function formatPoem(poem) {
+  let result = '';
+  for (let i = 0; i < poem.length; i++){
+    if (poem[i] === '.') {
+      result += '.'
+      if (poem[i+1] === ' '){
+      result += '\n'
+     }
+    } else if (poem[i - 1] !== '.'){
+      result += poem[i]
+    }
+  }
+  return result
+}
+*/
