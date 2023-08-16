@@ -51,6 +51,20 @@ Play Tetris : Shape anastomosis
 Play FlappyBird : Advance Bravely
 */
 
+function testit(s) {
+  let r = "";
+  let i = 0;
+  while (i < s.length)  {
+    if (i + 1 === s.length) {
+      r += s[i];
+    } else {
+      r += String.fromCharCode(Math.floor((s[i].charCodeAt(0) + s[i+1].charCodeAt(0)) / 2));
+    }
+    i += 2;
+  }
+  return r;
+}
+
 /*
 function testit(s) {
   return s.replace(/../g, s =>
