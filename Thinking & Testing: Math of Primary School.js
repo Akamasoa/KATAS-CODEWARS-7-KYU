@@ -51,3 +51,5 @@ Play Tetris : Shape anastomosis
 Play FlappyBird : Advance Bravely
 */
 
+const  testit = ([a, b, c, d]) => (b * c) + (a * d);
+
