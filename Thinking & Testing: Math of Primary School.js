@@ -53,3 +53,8 @@ Play FlappyBird : Advance Bravely
 
 const  testit = ([a, b, c, d]) => (b * c) + (a * d);
 
+/*
+function testit(arr) {
+  return arr[0] * arr[3] + arr[1] * arr[2];
+}
+*/
