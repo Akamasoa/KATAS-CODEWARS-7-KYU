@@ -53,3 +53,18 @@ Another series, innovative and interesting, medium difficulty. People who like t
 Play FlappyBird : Advance Bravely
 */
 
+function testit(s){
+  let str = '';
+  for (i = 0; i < s.length; i++) {
+     if (s[i + 1] === ' ' || i === s.length - 1) {
+        str += s[i].toUpperCase();
+     } else {
+        str += s[i]
+     }
+  }
+  return str;
+}
+
+/*
+const testit = s => s.replace(/.\b/g, c => c.toUpperCase())
+*/
