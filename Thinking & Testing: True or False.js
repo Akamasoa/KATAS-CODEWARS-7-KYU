@@ -53,3 +53,11 @@ Another series, innovative and interesting, medium difficulty. People who like t
 Play FlappyBird : Advance Bravely
 */
 
+function testit(n) {
+  let s = 0;
+  while (n) {
+    s += n & 1;
+    n >>= 1;
+  }
+  return s;
+}
