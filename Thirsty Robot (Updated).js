@@ -34,3 +34,74 @@ Notes:
 Only positive numbers will be passed into the function.
 */
 
+function thirstyRobot (drinks) {
+  let [wined, sick, drunk] = [false, false, false]
+  drinks.forEach(abv => {
+    if (wined && abv <= 8) sick = true
+    if (abv > 8 && abv <= 15) wined = true
+    if (abv > 15) drunk = true
+  })
+  if (!sick) return drunk ? "Wonky robot" : "Fine"
+  else return drunk ? "Poor robot" : "Oh dear"
+}
+
+/*
+function thirstyRobot(arr) {
+  var mapped = [];
+  let hasLiquor = false;
+  for (i = 0; i < arr.length; i++) {
+    if (arr[i] <= 8) {
+      mapped.push(1);
+    } else if (arr[i] <= 15) {
+      mapped.push(2);
+    } else {
+      hasLiquor = true;
+    }
+  }
+  
+  for( i = 0; i < mapped.length - 1; i++) {
+    if (mapped[i] > mapped[i+1]) {
+      return hasLiquor ? "Poor robot" : "Oh dear";
+    }
+  }
+  
+  return hasLiquor ? "Wonky robot" : "Fine";
+}function thirstyRobot(arr){
+  var isLiq = false;
+  var isWinePresent = false;
+  var doesWinePreceed = false;
+  
+  var arrayLength = arr.length;
+  for (var i = 0; i < arrayLength; i++) {
+      console.log("top="+arr[i])
+      if(arr[i] > 15) {
+        isLiq = true;
+      }
+      if(arr[i] <= 8 && isWinePresent) {
+        doesWinePreceed = true;
+        console.log("value="+arr[i]);
+      }
+      if(8 < arr[i] && arr[i] <= 15){
+        isWinePresent = true;
+        console.log("triggered="+arr[i])
+      }   
+  }
+  
+  if(!doesWinePreceed && !isLiq){
+    return "Fine";
+  }
+  
+  if(!doesWinePreceed && isLiq){
+    return "Wonky robot";
+  }
+  
+  if(doesWinePreceed && !isLiq){
+    return "Oh dear";
+  }
+  
+  if(doesWinePreceed && isLiq){
+    return "Poor robot";
+  }
+  
+}
+*/
