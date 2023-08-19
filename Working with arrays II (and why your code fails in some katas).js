@@ -6,3 +6,26 @@ Good luck!
 
 Some good reading: MDN Docs about arrays
 */
+
+const testit = (a,b) => a | b;
+
+/*
+function testit(a,b){
+//   if(a == b){
+//     return a
+//   }
+//   if(b > a){
+//     return b
+//   }
+//    if (b > a && a === 1){
+//     return b+a
+//   }
+  
+  
+  
+//   else{
+//     return a+b
+//   }
+  return a|b
+}
+*/
