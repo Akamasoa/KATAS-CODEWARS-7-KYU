@@ -42,3 +42,27 @@ Enjoy Learning !!
 Zizou
 */
 
+function tidyNumber(n) {
+  const arr = n.toString().split("");
+  for (let i = 0; i < arr.length - 1; i++) {
+    if (arr[i] <= arr[i + 1]) {
+      continue;
+    } else {
+      return false;
+    }
+  }
+  return true;
+}
+
+/*
+function tidyNumber(n) {
+  let m = 9;
+  while (n) {
+    if (n % 10 > m)
+      return false;
+    m = n % 10;
+    n = n / 10 | 0;
+  }
+  return true;
+}
+*/
