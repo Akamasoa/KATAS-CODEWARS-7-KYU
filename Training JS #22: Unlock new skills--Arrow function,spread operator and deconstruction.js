@@ -162,3 +162,10 @@ shuffleIt([1,2,3,4,5],[1,2],[3,4],[2,3]) should return [1,3,5,2,4]
 ```
 */
 
+let shuffleIt = (arr, ...swap) => {
+  for (let i = 0; i < swap.length; i++) {
+    let [a, b] = [swap[i][0], swap[i][1]];
+    [arr[a], arr[b]] = [arr[b], arr[a]];
+  }
+  return arr;
+};
