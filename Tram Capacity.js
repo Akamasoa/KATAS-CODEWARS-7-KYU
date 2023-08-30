@@ -30,3 +30,12 @@ function tram(stops, descending, onboarding){
   return max;
 }
 
+/*
+function tram(stops, descending, onboarding) {
+  let result = 0,
+    passengers = 0;
+  for (let i = 0; i < stops; i++)
+    result = Math.max(result, (passengers += onboarding[i] - descending[i]));
+  return result;
+}
+*/
