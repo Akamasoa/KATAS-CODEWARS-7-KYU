@@ -17,3 +17,16 @@ Finally, all the remaining passengers inside the tram exit the tram at the last 
 Since the number of passengers inside the tram never exceeds 6, a capacity of 6 is sufficient. Furthermore it is not possible for the tram to have a capacity less than 6. Hence, 6 is the correct answer.
 */
 
+function tram(stops, descending, onboarding){
+  let max = 0;
+  let passengers = 0;
+  for (let i = 0; i < stops; ++i) {
+    passengers += onboarding[i] - descending[i];
+    if (max < passengers) {
+      max = passengers;
+    }
+  }
+  
+  return max;
+}
+
