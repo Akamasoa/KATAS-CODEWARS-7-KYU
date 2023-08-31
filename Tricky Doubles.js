@@ -18,3 +18,10 @@ trickyDoubles(100)  // should return 200
 trickyDoubles(4343) // should return 4343
 */
 
+function trickyDoubles(n) {
+  let str = n.toString();
+  let left = str.slice(0, str.length / 2);
+  let right = str.slice(str.length / 2);
+  return left === right ? n : n * 2;
+}
+
