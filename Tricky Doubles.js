@@ -25,3 +25,9 @@ function trickyDoubles(n) {
   return left === right ? n : n * 2;
 }
 
+/*
+function trickyDoubles(n) {
+  let s = n.toString(), sh = s.slice(s.length / 2);
+  return sh + sh == s ? n : n * 2;
+}
+*/
