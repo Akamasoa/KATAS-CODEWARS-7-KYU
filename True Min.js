@@ -18,3 +18,8 @@ function min(a, b) {
   return a < b ? a : b;
 }
 
+/*
+function min(a, b){
+  return (isNaN(a) || isNaN(b)) ? NaN : ((a < b) ? +a : +b);
+}
+*/
