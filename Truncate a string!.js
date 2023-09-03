@@ -9,3 +9,12 @@ Examples
 ["a:12345", "777:xyz"]  -->  ["a:xyz", "777:12345"]
 */
 
+function truncateString(str, num) {
+  if (str.length <= num) {
+    return str;
+  }
+  if (str.slice(0, num).length > 3) {
+    return str.slice(0, num - 3) + "...";
+  }
+  return str.slice(0, num) + "...";
+}
