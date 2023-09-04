@@ -28,3 +28,46 @@ Ignore all other letters; we don't want our taco uneccesarily clustered or else 
 Note that no matter what ingredients are passed, our taco will always have a shell.
 */
 
+function tacofy(word) {
+  const obj = {
+    t: "tomato",
+    l: "lettuce",
+    c: "cheese",
+    g: "guacamole",
+    s: "salsa",
+    a: "beef",
+    e: "beef",
+    u: "beef",
+    i: "beef",
+    o: "beef"
+  };
+  const arr = [];
+  word.split("").map(v => arr.push(obj[v.toLowerCase()]));
+  arr.unshift("shell");
+  arr.push("shell");
+  return arr.filter(v => (v === undefined ? null : v));
+}
+
+/*
+function tacofy(word) {
+  word=word.toLowerCase();
+  var arr=['shell'];
+  for (var i=0; i<word.length; ++i)
+  {
+    if (word[i]=='a' || word[i]=='e' || word[i]=='o' || word[i]=='i' || word[i]=='u')
+      arr.push('beef');
+    if (word[i]=='t')
+      arr.push('tomato');
+    if (word[i]=='l')
+      arr.push('lettuce');
+    if (word[i]=='c')
+      arr.push('cheese');
+    if (word[i]=='g')
+      arr.push('guacamole');
+    if (word[i]=='s')
+      arr.push('salsa');
+  }
+  arr.push('shell');
+  return arr;
+}
+*/
