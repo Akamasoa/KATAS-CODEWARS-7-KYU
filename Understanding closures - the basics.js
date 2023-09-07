@@ -8,15 +8,16 @@ The wanted outcome is that when all function in the array are executed, the numb
 */
 
 function buildFun(n){
-
-	let res = [];
-
-	for (let i = 0; i< n; i++){
-		res.push(function(){
-			console.log(i)
+  let res = [];
+  for (let i = 0; i< n; i++){
+   res.push(function(){
+    console.log(i)
       return i;
-		})
-	}
-	return res;
+   })
+  }
+ return res;
 }
 
+/*
+const buildFun = n => [...Array(n)].map((v, i) => () => i);
+*/
