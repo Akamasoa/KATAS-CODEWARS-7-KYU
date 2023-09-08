@@ -18,3 +18,7 @@ your solution should not contain any arrays or objects that are used similar to 
 your function will only recieve a single number that is greater than or equal to 2 -- you do not need to worry about input validation.
 */
 
+function projectPartners(n) {
+  return (n * (n - 1)) / 2;
+}
+
