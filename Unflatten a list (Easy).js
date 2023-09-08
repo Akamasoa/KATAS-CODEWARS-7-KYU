@@ -47,3 +47,18 @@ function unflatten(flatArray) {
   }
   return res;
 }
+
+/*
+function unflatten (flatArray){
+  let newArr = [];
+  for( let i = 0; i < flatArray.length; i++){
+    if( flatArray[i] < 3 ){
+      newArr.push(flatArray[i]);
+    }else {
+      newArr.push(flatArray.slice(i, i + flatArray[i]));
+      i = i + flatArray[i] - 1;
+    }
+  }
+  return newArr;
+}
+*/
