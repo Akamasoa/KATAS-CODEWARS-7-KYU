@@ -22,3 +22,11 @@ function projectPartners(n) {
   return (n * (n - 1)) / 2;
 }
 
+/*
+function projectPartners(n) {
+  let r = 0;
+  for(let i = 1; i < n; i++)
+    r += i;
+  return r;
+}
+*/
