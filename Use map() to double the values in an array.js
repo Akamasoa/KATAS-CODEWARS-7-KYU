@@ -13,3 +13,6 @@ var someNumbers = [1,2,10,57];
 double(someNumbers); // should return [2,4,20,114]
 */
 
+function double(array) {
+  return array.map(element => element * 2);
+}
