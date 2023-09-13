@@ -13,3 +13,6 @@ var someNumbers = [1,2,3,4,5,6,7,8,9,10];
 sum(someNumbers); // should return 55
 */
 
+function sum(array) {
+   return [...array].reduce((total, element) => total + element, 0);
+}
