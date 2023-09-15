@@ -13,3 +13,16 @@ Our loose definition of Vampire Numbers can be described as follows:
 Create a function that can receive two 'fangs' and determine if the product of the two is a valid vampire number.
 */
 
+let vampire_test = function(a, b) {
+  return (
+    ("" + a + b)
+      .split("")
+      .sort()
+      .join() ==
+    (a * b + "")
+      .split("")
+      .sort()
+      .join()
+  );
+};
+
