@@ -19,3 +19,7 @@ orangeFraction("50 50 100") // =>  Output cocktail contains 66.6667 % of orange 
 orangeFraction("0 25 50 75") // => Output cocktail contains 37.5000 % of orange juice
 */
 
+function orangeFraction(fractions) {
+  let arr = fractions.split` `.reduce((a, b) => a + b * 1, 0);
+  return (arr / fractions.split` `.length).toFixed(4) * 1;
+}
