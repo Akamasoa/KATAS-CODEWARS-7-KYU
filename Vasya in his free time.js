@@ -19,3 +19,7 @@ Task.ResultString(5, "01010") // answer is 1 =>  sequence of the possible steps:
 Task.ResultString(8, "11101111") // answer is 6 =>  sequence of the possible steps: 11101111 --> 111111
 */
 
+function CalculateString( n,  nums) {
+  while (/01|10/.test(nums)) nums = nums.replace(/01|10/g, "");
+   return nums.length;
+}
