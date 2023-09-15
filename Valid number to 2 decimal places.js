@@ -24,3 +24,36 @@ List of non-valid numbers: ["hellow 11.99" "11.9" "11" "11." ".9"]
 function validNumber(num) {
   return /^[+-]?\d*\.\d\d$/.test(num);
 }
+
+/*
+function validNumber(num){
+  let arr = num.split('.');
+  if (arr.length!=2 || arr[1].length!=2)
+    return false;
+  for (let i=0; i<arr[0].length; ++i)
+  {
+    if (i==0)
+    {
+      if (arr[0][i]!='+' && arr[0][i]!='-'  && (arr[0][i]<'0' || arr[0][i]>'9'))
+        return false;
+    }
+    else
+      if (arr[0][i]<'0' || arr[0][i]>'9')
+        return false;
+  }
+  for (let i=0; i<arr[1].length; ++i)
+    if (arr[1][i]<'0' || arr[1][i]>'9')
+      return false;
+  return true;
+}
+
+function validNumber(num){
+  if( num - '1234' ){
+    let [start, end] = num.split('.')
+    if( end - '1234' && end.length === 2 ){
+      return true
+    }
+  }
+  return false
+}
+*/
