@@ -25,3 +25,8 @@ cupVolume(5, 12, 31);
 You will only be passed positive numbers.
 */
 
+function cupVolume(d1, d2, height){
+   return (
+    (((Math.PI * height) / 12) * (d1 ** 2 + d1 * d2 + d2 ** 2)).toFixed(2) * 1
+  );
+}
