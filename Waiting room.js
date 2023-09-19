@@ -19,3 +19,10 @@ Output: a positive integer, the last patient's chair number.
 Have fun :)
 */
 
+function lastChair(N){
+  return N - 1;
+}
+
+/*
+let lastChair = n => n - 1;
+*/
