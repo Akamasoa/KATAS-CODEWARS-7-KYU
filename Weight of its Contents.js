@@ -15,3 +15,30 @@ scale will be a string that you will need to parse. It will tell you how the con
 The first test case has been filled out for you. Good luck!
 */
 
+/*
+* Takes a bottleWeight and scale of the bottle to its contents
+* and returns the weight of its contents
+* @param {int} bottleWeight:
+*  The weight of the entire bottle and contents
+* @param {string} scale:
+*  A string comparing the weight of the bottle contents to the weight of the bottle by itself
+* Acceptable values: ('2 times larger', '4 times larger', '50 times smaller') 
+*/
+function contentWeight(bottleWeight, scale) {
+  let s = parseInt(scale);
+  return /larger/.test(scale)
+    ? (bottleWeight * s) / (s + 1)
+    : bottleWeight / (s + 1);
+}
+
+/*
+function contentWeight(bottleWeight, scale) {
+  scale = scale.split(' times ');
+  var magnitude = +scale[0];
+  var comparison = scale[1];
+  if (comparison == 'larger')
+    return bottleWeight * magnitude / (magnitude + 1);
+  else
+    return bottleWeight / (magnitude + 1);
+}
+*/
