@@ -18,3 +18,6 @@ instructions = [1,2,4,3,5]
 "5 4 3 2 1 liftoff!"
 */
 
+function liftoff(instructions){
+  return `${instructions.sort((a, b) => b - a).join(" ")} liftoff!`;
+}
