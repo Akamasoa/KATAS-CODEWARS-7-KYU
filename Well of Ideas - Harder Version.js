@@ -17,3 +17,11 @@ function well(x) {
   return count < 1 ? "Fail!" : count > 2 ? "I smell a series!" : "Publish!";
 }
 
+/*
+function well(x) {
+  let match = (''+x).match(/good/gi) || []
+  if (match.length == 0) return 'Fail!'
+  if (match.length <= 2) return 'Publish!'
+  return 'I smell a series!'
+}
+*/
