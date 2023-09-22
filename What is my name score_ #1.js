@@ -23,3 +23,13 @@ Note that the alpha object will be randomly generated each time you run the test
 In accordance to the above alpha object, the name Mary Jane will have a name score of 20 => M=3 + a=1 + r=4 + y=5 + J=2 + a=1 + n=3 + e=1
 */
 
+function nameScore(name){
+  let count = 0;
+  for (let i = 0; i < name.length; ++i)
+    for (let key in alpha)
+      if (key.indexOf(name[i].toUpperCase()) != -1)
+        count += alpha[key];
+  let a = {};
+  a[name] = count;
+  return a;
+}
