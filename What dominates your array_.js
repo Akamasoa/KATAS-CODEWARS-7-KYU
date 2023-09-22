@@ -6,3 +6,15 @@ The dominator of arr is 3 because it occurs in 5 out of 8 elements of arr and 5 
 Write a function dominator(arr) that, given a zero-indexed array arr consisting of n integers, returns the dominator of arr. The function should return −1 if array does not have a dominator. All values in arr will be >=0.
 */
 
+function dominator(arr) {
+  arr.sort();
+  for (let i = 0, v = 0, c = 0; i < arr.length; i++) {
+     if (v == arr[i]) c++;
+     else { 
+       v = arr[i];
+       c = 1;
+     }
+     if (c > arr.length / 2) return v;
+  }
+  return -1;
+}
