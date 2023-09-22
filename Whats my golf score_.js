@@ -19,3 +19,7 @@ function golfScoreCalculator(parList, scoreList){
     }
     return result;
 }
+
+/*
+const golfScoreCalculator = (parList, scoreList) =>
+  [...scoreList].reduce((result, score, index) => result += score - parList[index], 0)*/
