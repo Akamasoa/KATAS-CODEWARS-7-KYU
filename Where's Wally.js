@@ -24,3 +24,18 @@ Examples:
 function wheresWally(string) {
   return (" " + string).search(/ Wally\b/);
 }
+
+/*
+function wheresWally(string){ 
+  let arr=string.split(' ');
+  for (let i=0; i<arr.length; ++i)
+    if (arr[i]=='Wally' || arr[i]=='Wally.' || arr[i]=="Wally's.")  
+    {
+      let sum=0;
+      for (let j=0; j<i; ++j)
+        sum+=arr[j].length+1;
+      return sum;
+    }
+  return -1;
+}
+*/
