@@ -15,3 +15,6 @@ function mineColor(file, rank) {
    return dict[file] % 2 === rank % 2 ? "black" : "white";
 }
 
+/*
+let mineColor = (l, n) => (l.charCodeAt() - 97 + n) % 2 ? "black" : "white";
+*/
