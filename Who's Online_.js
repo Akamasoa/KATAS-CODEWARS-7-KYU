@@ -41,3 +41,18 @@ username will always be a string, status will always be either 'online' or 'offl
 Finally, if you have no friends in your chat application, the input will be an empty array []. In this case you should return an empty object {} (empty Dictionary in C#).
 */
 
+const whosOnline = (friends) => {
+    let output = {};
+    friends.forEach(e => {
+        let status = e.status;
+        if(status === 'online' && e.lastActivity > 10) status = 'away';
+        let temp = output[status];
+        if(output[status]) {
+            output[status].push(e.username);
+        }
+        else {
+            output[status] = [e.username];
+        }
+    });
+    return output;
+}
