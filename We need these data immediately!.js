@@ -10,3 +10,16 @@ There is some strange error. Can you find it out, what has changed?
 Tip: if in doubt, take a look at Mozilla's Lexical Grammar (thanks jpot for link!). Answer is somewhere here.
 */
 
+let time = Date.now()
+let data = (function returnSomeData(time)
+{
+  return (
+  { 
+    name: '__B00013',
+    timeStamp: time || 'unknown',    
+    type: 'raw',
+    var1: 0x041451,
+    var2: 0x00,
+    var3: 0x00040
+  })
+})()
