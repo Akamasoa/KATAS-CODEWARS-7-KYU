@@ -4,3 +4,9 @@ Fortunately last weekend, I met an utterly drunk old man. He was too drunk to be
 Because drunk man also needs to take a pause and take a deep breath, you have to remove those pauses (redundant/unnecessary spaces).
 */
 
+function wdm(talk) {
+  return talk
+    .replace(/(puke|hiccup)/gi, "")
+    .replace(/\s+/g, " ")
+    .trim();
+}
