@@ -15,3 +15,18 @@ function translateDate(dateStr){
   );
 }
 
+/*
+function translateDate(dateStr){
+  let s = ''
+  for (let i = 0; i < dateStr.length; ++i)
+    if (dateStr[i] == '-')
+      s += '-';
+    else
+    {
+      if  (dateStr[i].charCodeAt() -50 < 10)
+        s += '0';
+      s += (dateStr[i].charCodeAt() - 50);
+    }
+  return s;
+}
+*/
